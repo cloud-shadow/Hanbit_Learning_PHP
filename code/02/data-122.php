@@ -1,4 +1,4 @@
 <?php
 $min = -40;
 $max = 40;
-printf("The computer can operate between %+d and %+d degrees Celsius.", $min, $max);
+printf("컴퓨터는 섭씨 %+d도와 %+d도 사이에서 작동할 수 있습니다.", $min, $max);

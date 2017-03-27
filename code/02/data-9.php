@@ -1,5 +1,5 @@
 <?php
-print 'bread' . 'fruit';
-print "It's a beautiful day " . 'in the neighborhood.';
-print "The price is: " . '$3.95';
-print 'Inky' . 'Pinky' . 'Blinky' . 'Clyde';
+print '빵' . '과일';
+print "뽀뽀뽀 친구들 " . '안녕?';
+print "가격: " . '$3.95';
+print '변덕꾸러기' . '매복자' . '추격자' . '바보';

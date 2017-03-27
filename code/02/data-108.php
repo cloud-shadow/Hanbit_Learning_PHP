@@ -8,8 +8,8 @@ $username = 'james';
 $domain = '@example.com';
 $email_address = $username . $domain;
 
-print 'The tax is ' . $tax_amount;
-print "\n"; // this prints a linebreak
-print 'The total cost is ' .$total_cost;
-print "\n"; // this prints a linebreak
+print '세금은 ' .$tax_amount;
+print "\n"; // 줄바꿈을 출력한다.
+print '총 가격은 ' .$total_cost;
+print "\n"; // 줄바꿈을 출력한다.
 print $email_address;

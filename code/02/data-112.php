@@ -1,10 +1,10 @@
 <?php
-// Add one to $birthday
+// $birthday 에 1 더하기
 $birthday = $birthday + 1;
-// Add another one to $birthday
+// $birthday 에 또 1 더하기
 ++$birthday;
 
-// Subtract 1 from $years_left
+// $years_left에서 1 빼기
 $years_left = $years_left - 1;
-// Subtract another 1 from $years_left
+// $years_left에서 또 1 빼기
 --$years_left;
