@@ -1,17 +1,17 @@
 <?php
-// Print a greeting if the form was submitted
+// 폼이 전송되면 인사하기
 if ($_POST['user']) {
     print "Hello, ";
-    // Print what was submitted in the form parameter called 'user'
+    // 'user'라는 폼 매개변수로 제출된 값 출력
     print $_POST['user'];
     print "!";
 } else {
-    // Otherwise, print the form
+    // 그렇지 않다면 폼 출력
     print <<<_HTML_
 <form method="post" action="$_SERVER[PHP_SELF]">
-Your Name: <input type="text" name="user" />
+이름: <input type="text" name="user" />
 <br/>
-<button type="submit">Say Hello</button>
+<button type="submit">인사하기</button>
 </form>
 _HTML_;
 }

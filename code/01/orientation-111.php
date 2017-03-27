@@ -1,3 +1,3 @@
-<?php print "The population of the US is about: ";
-print number_format(320853904);
+<?php print "한국의 대략적인 인구: ";
+print number_format(50801405);
 ?>

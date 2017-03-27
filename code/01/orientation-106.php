@@ -1,15 +1,15 @@
 <?php
-/* We're going to add a few things to the menu:
-   - Smoked Fish Soup
-   - Duck with Pea Shoots
-   - Shark Fin Soup
+/* 새로운 메뉴를 몇 개 추가합니다:
+   - 훈제 생선 수프
+   - 새싹콩 오리
+   - 샥스핀
 */
-print 'Smoked Fish Soup, Duck with Pea Shoots, Shark Fin Soup ';
-print 'Cost: 3.25 + 9.50 + 25.00';
+print '훈제 생선 수프, 새싹콩 오리, 샥스핀 ';
+print '가격: 3.25 + 9.50 + 25.00';
 
-/* This is the old menu:
-The following lines are inside this comment so they don't get executed.
-print 'Hamburger, French Fries, Cola ';
-print 'Cost: 0.99 + 1.25 + 1.50';
+/* 이 부분은 기존 메뉴임:
+다음 줄들은 주석 안에 있기 때문에 실행되지 않습니다.
+print '햄버거, 감자 튀김, 콜라 ';
+print '가격: 0.99 + 1.25 + 1.50';
 */
 ?>

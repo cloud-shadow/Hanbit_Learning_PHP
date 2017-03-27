@@ -1,7 +1,7 @@
 <?php
-// These four lines all do the same thing
-print number_format(320853904);
-PRINT Number_Format(320853904);
-Print number_format(320853904);
-pRiNt NUMBER_FORMAT(320853904);
+// 다음 4줄은 모두 동일하게 작동한다.
+print number_format(50801405);
+PRINT Number_Format(50801405);
+Print number_format(50801405);
+pRiNt NUMBER_FORMAT(50801405);
 ?>
