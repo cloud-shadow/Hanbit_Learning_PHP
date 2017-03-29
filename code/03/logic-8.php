@@ -2,10 +2,10 @@
 $age = 12;
 $shoe_size = 13;
 if ($age > $shoe_size) {
-    print "Message 1.";
+    print "1번 메시지.";
 } elseif (($shoe_size++) && ($age > 20)) {
-    print "Message 2.";
+    print "2번 메시지.";
 } else {
-    print "Message 3.";
+    print "3번 메시지.";
 }
-print "Age: $age. Shoe Size: $shoe_size";
+print "나이: $age. 신발 치수: $shoe_size";

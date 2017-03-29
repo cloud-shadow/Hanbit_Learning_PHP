@@ -1,4 +1,4 @@
 <?php
 if (12 == $new_messages) {
-    print "You have twelve new messages.";
+    print "새로운 메시지가 12개 있습니다.";
 }

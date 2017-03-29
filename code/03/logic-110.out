@@ -1,1 +1,1 @@
-This is always printed.Welcome aboard, trusted user.This is only printed if $logged_in is true.This is also always printed.
+여기는 항상 출력됩니다.환영합니다 정회원님.이 부분은 $logged_in이 참일 때만 출력됩니다.여기도 항상 출력됩니다.

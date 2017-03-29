@@ -1,5 +1,5 @@
 <?php
 
 $age = 10;
-$meal = 'lunch';
-$dessert = 'cookie';
+$meal = '점심';
+$dessert = '쿠키';

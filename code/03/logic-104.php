@@ -1,12 +1,12 @@
 <?php
-// The entire test expression ($finished == false)
-// is true if $finished is false
+// ($finished == false)라는 표현식 전체는
+// $finished가 거짓일 때 참이다.
 if ($finished == false) {
-    print 'Not done yet!';
+    print '아직 덜 끝났어!';
 }
 
-// The entire test expression (! $finished)
-// is true if $finished is false
-if (! $finished) {
-    print 'Not done yet!';
+// (! $finished)라는 표현식 전체는
+// $finished가 거짓일 때 참이다.
+if (!$finished) {
+    print '아직 덜 끝났어!';
 }

@@ -1,7 +1,7 @@
 <?php
-print "This is always printed.";
+print "여기는 항상 출력됩니다.";
 if ($logged_in) {
-    print "Welcome aboard, trusted user.";
-    print 'This is only printed if $logged_in is true.';
+    print "환영합니다 정회원님.";
+    print '이 부분은 $logged_in이 참일 때만 출력됩니다.';
 }
-print "This is also always printed.";
+print "여기도 항상 출력됩니다.";
