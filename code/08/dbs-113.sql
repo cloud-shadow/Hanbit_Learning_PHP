@@ -1,1 +1,1 @@
-DELETE FROM tablename [WHERE where_clause]
+DELETE FROM 테이블명 [WHERE 표현식]

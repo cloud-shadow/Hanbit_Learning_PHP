@@ -9,5 +9,5 @@ try {
         is_spicy INT
 )");
 } catch (PDOException $e) {
-    print "Couldn't create table: " . $e->getMessage();
+    print "테이블을 생성할 수 없습니다: " . $e->getMessage();
 }

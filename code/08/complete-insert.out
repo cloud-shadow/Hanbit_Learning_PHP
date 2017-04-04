@@ -2,21 +2,21 @@
 <table>
     
     <tr>
-        <td>Dish Name:</td>
+        <td>메뉴 이름:</td>
         <td><input name="dish_name" type="text" /></td>
     </tr>
     <tr>
-        <td>Price:</td>
+        <td>가격:</td>
         <td><input name="price" type="text" value="5.00" /></td>
     </tr>
 
     <tr>
-        <td>Spicy:</td>
+        <td>맵기:</td>
         <td><input name="is_spicy" value="yes" type="checkbox" /> Yes</td>
     </tr>
 
     <tr><td colspan="2" align="center">
-        <input name="save" value="Order" type="submit" />    </td></tr>
+        <input name="save" value="주문" type="submit" />    </td></tr>
 
 </table>
 </form>

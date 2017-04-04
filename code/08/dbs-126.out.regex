@@ -1,1 +1,1 @@
-/Couldn't connect to the database: SQLSTATE\[[A-Z\d]+\] \[\d+\] .+/
+/데이터베이스에 접속할 수 없습니다: SQLSTATE\[[A-Z\d]+\] \[\d+\] .+/

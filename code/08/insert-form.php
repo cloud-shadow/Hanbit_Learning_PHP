@@ -2,7 +2,7 @@
 <table>
     <?php if ($errors) { ?>
         <tr>
-            <td>You need to correct the following errors:</td>
+            <td>다음 항목을 수정해주세요:</td>
             <td><ul>
                 <?php foreach ($errors as $error) { ?>
                     <li><?= $form->encode($error) ?></li>
@@ -11,22 +11,22 @@
     <?php }  ?>
 
     <tr>
-        <td>Dish Name:</td>
+        <td>메뉴 이름:</td>
         <td><?= $form->input('text', ['name' => 'dish_name']) ?></td>
     </tr>
     <tr>
-        <td>Price:</td>
+        <td>가격:</td>
         <td><?= $form->input('text', ['name' => 'price']) ?></td>
     </tr>
 
     <tr>
-        <td>Spicy:</td>
+        <td>맵기:</td>
         <td><?= $form->input('checkbox',['name' => 'is_spicy',
                                          'value' => 'yes']) ?> Yes</td>
     </tr>
 
     <tr><td colspan="2" align="center">
-        <?= $form->input('submit',['name' => 'save','value' => 'Order']) ?>
+        <?= $form->input('submit',['name' => 'save','value' => '주문']) ?>
     </td></tr>
 
 </table>

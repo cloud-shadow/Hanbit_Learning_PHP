@@ -1,2 +1,2 @@
-INSERT INTO table (column1[, column2, column3, ...])
-    VALUES (value1[, value2, value3, ...])
+INSERT INTO 테이블 (컬럼1[, 컬럼2, 컬럼3, ...])
+   VALUES (값1[, 값2, 값3, ...])
