@@ -1,10 +1,10 @@
-// Capture output instead of printing it
+// 출력 내용을 가로챈다.
 ob_start( );
-// Call var_dump( ) as usual
+// 평소처럼 var_dump() 호출한다.
 var_dump($_POST);
-// Store in $output the output generated since calling ob_start( )
+// ob_start()를 호출한 뒤 출력된 내용을 $output에 저장한다.
 $output = ob_get_contents( );
-// Go back to regular printing of output
+// 일반적인 출력으로 되돌린다.
 ob_end_clean( );
-// Send $output to the error log
+// $output을 오류 로그로 보낸다.
 error_log($output);

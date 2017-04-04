@@ -1,5 +1,5 @@
 <?php
 if $logged_in) {
-        print "Welcome, user.";
+        print "¾È³çÇÏ¼¼¿ä. È¸¿ø´Ô";
     }
 ?>

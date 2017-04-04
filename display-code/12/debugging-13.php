@@ -1,15 +1,15 @@
 <?php
-// Connect to the database
+// 데이터베이스 접속
 try {
     $db = new PDO('sqlite::/tmp/restaurant.db');
 } catch ($e) {
-    die("Can't connect: " . $e->getMessage());
+    die("접속할 수 없습니다: " . $e->getMessage());
 }
-// Set up exception error handling
+// DB 오류와 예외 설정
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-// Set up fetch mode: rows as arrays
+// 배열 방식으로 가져오기
 $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-// get the array of dish names from the database
+// 데이터베이스에서 메뉴명을 배열로 가져오기
 $dish_names = array( );
 $res = $db->query('SELECT dish_id,dish_name FROM dishes');
 foreach ($res->fetchAll() as $row) {
@@ -18,10 +18,11 @@ foreach ($res->fetchAll() as $row) {
 $res = $db->query('SELECT ** FROM customers ORDER BY phone DESC');
 $customers = $res->fetchAll();
 if (count($customers) = 0) {
-    print "No customers.";
+    print "고객이 존재하지 않습니다.";
 } else {
     print '<table>';
-    print '<tr><th>ID</th><th>Name</th><th>Phone</th><th>Favorite Dish</th></tr>';
+    print '<tr><th>ID</th><th>이름</th><th>전화번호</th>
+    <th>단골 메뉴</th></tr>';
     foreach ($customers as $customer) {
         printf("<tr><td>%d</td><td>%s</td><td>%f</td><td>%s</td></tr>\n",
                $customer['customer_id'],

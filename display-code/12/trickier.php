@@ -1,8 +1,8 @@
 <?php
-$first_name = "David';
+$first_name = "È«±æµ¿';
 if ($logged_in) {
-    print "Welcome, $first_name";
+    print "¾È³çÇÏ¼¼¿ä, $first_name ´Ô";
 } else {
-    print "Howdy, Stranger.";
+    print "¹Ý°©½À´Ï´Ù, ¹æ¹®ÀÚ´Ô.";
 }
 ?>
