@@ -1,4 +1,4 @@
 <?php
 if (strlen(trim($_POST['name'])) == 0) {
-    $errors[] = "Your name is required.";
+    $errors[] = "이름을 입력해주세요.";
 }

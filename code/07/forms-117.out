@@ -1,13 +1,13 @@
 <form method="POST" action="catalog.php">
 <input type="text" name="product_id">
 <select name="category">
-<option value="ovenmitt">Pot Holder</option>
-<option value="fryingpan">Frying Pan</option>
-<option value="torch">Kitchen Torch</option>
+<option value="ovenmitt">냄비받침</option>
+<option value="fryingpan">프라이팬</option>
+<option value="torch">주방토치</option>
 </select>
-<input type="submit" name="submit">
+<input type="submit" name= "제출">
 </form>
-Here are the submitted values:
+제출된 값은 다음과 같습니다:
 
 product_id: <br/>
 category: 

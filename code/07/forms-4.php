@@ -1,5 +1,5 @@
 <?php
 $input['order'] = $_POST['order'];
 if (! in_array($input['order'], $GLOBALS['sweets'])) {
-    $errors[] = 'Please choose a valid order.';
+    $errors[] = '주문 가능한 메뉴가 아닙니다.';
 }

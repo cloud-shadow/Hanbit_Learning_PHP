@@ -1,5 +1,5 @@
-<select name="sweet"><option value="puff"> Sesame Seed Puff</option>
-<option value="square" selected> Coconut Milk Gelatin Square</option>
-<option value="cake"> Brown Sugar Cake</option>
-<option value="ricemeat"> Sweet Rice and Meat</option>
+<select name="sweet"><option value="puff"> 참깨 퍼프</option>
+<option value="square" selected> 코코넛 우유 젤리</option>
+<option value="cake"> 흑설탕 케이크</option>
+<option value="ricemeat"> 찹쌀 경단</option>
 </select>

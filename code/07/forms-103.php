@@ -1,12 +1,12 @@
 <?php
-// Make a DateTime object for 6 months ago
+// 6개월 전을 나타내는 DateTime 객체 생성
 $range_start = new DateTime('6 months ago');
-// Make a DateTime object for right now
-$range_end   = new DateTime();
+// 현재를 나타내는 DateTime 객체 생성
+$range_end = new DateTime();
 
-// 4-digit year is in $_POST['year']
-// 2-digit month is in $_POST['month']
-// 2-digit day is is $_POST['day']
+// $_POST['year']가 1900부터 2100 사이의 연도인지 검사한다.
+// $_POST['month']가 1부터 12 사이의 월인지 검사한다.
+// $_POST['day']가 1부터 31 사이의 일인지 검사한다.
 $input['year'] = filter_input(INPUT_POST, 'year', FILTER_VALIDATE_INT,
                               array('options' => array('min_range' => 1900,
                                                        'max_range' => 2100)));
@@ -16,19 +16,18 @@ $input['month'] = filter_input(INPUT_POST, 'month', FILTER_VALIDATE_INT,
 $input['day'] = filter_input(INPUT_POST, 'day', FILTER_VALIDATE_INT,
                              array('options' => array('min_range' => 1,
                                                       'max_range' => 31)));
-// No need to use === to compare to false since 0 is not a valid
-// choice for year, month, or day. checkdate() makes sure that
-// the number of days is valid for the given month and year
-if ($input['year'] && input['month'] && input['day'] &&
+// 연도, 월, 일은 0이 될 수 없으므로 항등 연산자(= = = )를 사용할 필요가 없다.
+// 특정 월에 해당하는 일자가 올바른지 확인하고자 checkdate() 함수를 사용한다.
+if ($input['year'] && $input['month'] && $input['day'] &&
     checkdate($input['month'], $input['day'], $input['year'])) {
     $submitted_date = new DateTime(strtotime($input['year'] . '-' .
                                              $input['month'] . '-' .
                                              $input['day']));
     if (($range_start > $submitted_date) || ($range_end < $submitted_date)) {
-        $errors[] = 'Please choose a date less than six months old.';
+        $errors[] = '지난 6개월 사이에 속하는 날짜를 입력해주세요.';
     }
 } else {
-    // This happens if someone omits one of the form parameters or submits
-    // something like February 31.
-    $errors[] = 'Please enter a valid date.';
+    // 이 부분은 연도, 월, 일 폼 매개변수 중 하나라도 누락했거나
+    // 2월 31일처럼 올바르지 않은 날짜를 입력했을 때 수행된다.
+    $errors[] = '올바른 날짜를 입력해주세요.';
 }
