@@ -1,9 +1,10 @@
-Learning PHP
+# 『러닝 PHP』
+<img src="http://www.hanbit.co.kr/data/books/B8310462346_l.jpg">
 ==========
 
 ## 이 저장소는?
 
-이곳은 한국어판 Learning PHP의 예제 코드 저장소입니다. [원서](http://shop.oreilly.com/product/0636920043034.do)의 예제 코드는 [여기](https://github.com/oreillymedia/Learning_PHP)에 있습니다.
+이 곳은 [『러닝 PHP』(한빛미디어, 2017)](http://www.hanbit.co.kr/store/books/look.php?p_code=B8310462346)의 예제 코드 저장소입니다. [원서 『Learning PHP』(O'reily, 2016)](http://shop.oreilly.com/product/0636920043034.do)의 예제 코드는 [여기](https://github.com/oreillymedia/Learning_PHP)에 있습니다.
 
 <!-- 오류 신고나 정정 요청는 한빛미디어 고객게시판을 이용하거나 이메일 cloudshadow@gmail.com을 이용해주세요. 이 저장소를 직접 포크하셔서 수정한 뒤 풀 리퀘스트를 보내주셔도 됩니다.  -->
 
