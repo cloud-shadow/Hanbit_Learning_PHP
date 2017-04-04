@@ -6,4 +6,4 @@ if (! $is_https) {
     header("Location: $newUrl");
     exit();
 }
-print "You accessed this page over HTTPS. Yay!";
+print "HTTPS를 통해 접근하셨습니다. 야호!";

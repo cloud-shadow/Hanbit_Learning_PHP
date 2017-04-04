@@ -1,10 +1,10 @@
 <?php
 
 $c = curl_init('http://numbersapi.com/09/27');
-// Tell cURL to return the response contents as a string
-// rather then printing them out immediately
+// cURL이 응답을 가져와 바로 출력하지 않고
+// 문자열로 가져오도록 설정한다.
 curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
-// Execute the request
+// 요청 실행
 $fact = curl_exec($c);
 
 ?>
