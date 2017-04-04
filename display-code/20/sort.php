@@ -1,14 +1,14 @@
-// US English
+// 미국식 영어
 $en = new Collator('en_US');
-// Danish
+// 덴마크어
 $da = new Collator('da_DK');
 
 $words = array('absent','åben','zero');
 
-print "Before sorting: " . implode(', ', $words) . "\n";
+print "정렬 전: " . implode(', ', $words) . "\n";
 
 $en->sort($words);
-print "en_US sorting: " . implode(', ', $words) . "\n";
+print "en_US 정렬: " . implode(', ', $words) . "\n";
 
 $da->sort($words);
-print "da_DK sorting: " . implode(', ', $words) . "\n";
+print "da_DK 정렬: " . implode(', ', $words) . "\n";

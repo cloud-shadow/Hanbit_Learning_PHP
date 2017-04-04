@@ -1,2 +1,2 @@
-substr() says: In Russia, I like to eat ка�
-mb_substr() says: In Russia, I like to eat каша 
+substr()을 사용할 때: In Russia, I like to eat ка�
+mb_substr()을 사용할 때: In Russia, I like to eat каша 

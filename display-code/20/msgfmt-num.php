@@ -1,4 +1,4 @@
-$msg = "The cost is {0,number,currency}.";
+$msg = "ÃÑ °¡°Ý: {0,number,currency}.";
 
 $fmtUS = new MessageFormatter('en_US', $msg);
 $fmtGB = new MessageFormatter('en_GB', $msg);

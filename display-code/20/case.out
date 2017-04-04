@@ -1,16 +1,16 @@
-strtolower() says: 
+strtolower()À» »ç¿ëÇÒ ¶§: 
    please stop shouting.
    venligst stoppe rï¿½ben.
    hï¿½y dá»«ng la hï¿½t.
-mb_strtolower() says: 
+mb_strtolower()À» »ç¿ëÇÒ ¶§: 
    please stop shouting.
    venligst stoppe rÃ¥ben.
    hÃ£y dá»«ng la hÃ©t.
-strtoupper() says: 
+strtoupper()À» »ç¿ëÇÒ ¶§: 
    PLEASE STOP SHOUTING.
    VENLIGST STOPPE RÃ¥BEN.
    HÃ£Y DÁ»NG LA HÃ©T.
-mb_strtoupper() says: 
+mb_strtoupper()À» »ç¿ëÇÒ ¶§:
    PLEASE STOP SHOUTING.
    VENLIGST STOPPE RÃ…BEN.
    HÃƒY Dá»ªNG LA HÃ‰T.

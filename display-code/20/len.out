@@ -1,2 +1,2 @@
-strlen() says 6 for cheese and 8 for τυρί.
-mb_strlen() says 6 for cheese and 4 for τυρί.
+strlen()을 사용했을 때 'cheese'의 글자 수: 6, 'τυρί'의 글자 수: 8.
+mb_strlen()을 사용했을 때 'cheese'의 글자 수: 6, 'τυρί'의 글자 수: 4.
