@@ -1,5 +1,5 @@
 $meals['Walnut Bun'] = '$3.95';
-$hosts['www.example.com'] = 'web site';
+$hosts['www.example.com'] = '웹사이트';
 
-print "A Walnut Bun costs {$meals['Walnut Bun']}.\n";
-print "www.example.com is a {$hosts['www.example.com']}.";
+print "호두 번의 가격은 {$meals['Walnut Bun']}입니다.\n";
+print "www.example.com은 {$hosts['www.example.com']}입니다.";

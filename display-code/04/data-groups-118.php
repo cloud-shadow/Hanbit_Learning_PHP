@@ -1,6 +1,6 @@
-print $meals['lunch'][1];            // White Mushrooms
-print $meals['snack'][0];            // Dried Mulberries
-print $lunches[0][0];                // Chicken
-print $lunches[2][1];                // Tofu
-print $flavors['Japanese']['salty']; // soy sauce
-print $flavors['Chinese']['hot'];    // mustard
+print $meals['lunch'][1];            // 양송이버섯
+print $meals['snack'][0];            // 말린 오디
+print $lunches[0][0];                // 닭고기
+print $lunches[2][1];                // 두부
+print $flavors['Japanese']['salty']; // 간장 소스
+print $flavors['Chinese']['hot'];    // 머스터드

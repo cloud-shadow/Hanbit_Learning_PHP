@@ -5,7 +5,7 @@ $dishes['Roast Duck'] = 3;
 $dishes['total'] = $dishes['Beef Chow Foon'] + $dishes['Roast Duck'];
 
 if ($dishes['total'] > 15) {
-    print "You ate a lot: ";
+    print "¸¹ÀÌµµ ¸Ô¾ú±º";
 }
 
-print 'You ate ' . $dishes['Beef Chow Foon'] . ' dishes of Beef Chow Foon.';
+print 'Beef Chow Foon ¸Þ´º¸¦ ÃÑ ' . $dishes['Beef Chow Foon'] . ' ±×¸© µå¼Ì½À´Ï´Ù.';

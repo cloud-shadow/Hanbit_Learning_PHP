@@ -3,18 +3,18 @@ $meals = array('Walnut Bun' => 1,
                'Dried Mulberries' => 3.00,
                'Eggplant with Chili Sauce' => 6.50,
                'Shrimp Puffs' => 0);
-$books = array("The Eater's Guide to Chinese Characters",
-               'How to Cook and Eat in Chinese');
+$books = array("이용객을 위한 A급 중국어 안내 ",
+               '중국의 요리 방식과 식사 문화');
 
-// This is true: key Dried Mulberries has value 3.00
+// Dried Mulberries 키의 값이 3.00이므로 이 조건은 참이다.
 if (in_array(3, $meals)) {
-  print 'There is a $3 item.';
+    print '가격이 $3인 메뉴가 있습니다.';
 }
-// This is true
-if (in_array('How to Cook and Eat in Chinese', $books)) {
-  print "We have How to Cook and Eat in Chinese";
+// 이 조건도 참이다.
+if (in_array('중국의 요리 방식과 식사 문화', $books)) {
+    print "중국의 요리 방식과 식사 문화를 보실 수 있습니다.";
 }
-// This is false: in_array( ) is case-sensitive
-if (in_array("the eater's guide to chinese characters", $books)) {
-  print "We have the Eater's Guide to Chinese Characters.";
+// in_array() 는 대소문자를 구별하므로 이 조건은 거짓이다.
+if (in_array("이용객을 위한 a급 중국어 안내", $books)) {
+    print "이용객을 위한 A급 중국어 안내를 보실 수 있습니다.";
 }

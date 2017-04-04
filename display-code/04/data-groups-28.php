@@ -1,2 +1,2 @@
-$students = [ 'James D. McCawley' => [ 'grade' => 'A+','id' => 271231 ],
-              'Buwei Yang Chao' => [ 'grade' => 'A', 'id' => 818211] ];
+$students = [ 'Hong Gil Dong' => [ 'grade' => '100','id' => 271231 ],
+            'Kim Soo Yong ' => [ 'grade' => '95', 'id' => 818211] ];
