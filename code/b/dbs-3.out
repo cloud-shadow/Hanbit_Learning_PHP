@@ -1,12 +1,12 @@
 <form method="POST" action="{{d}}dbs-3.php">
 <table>
         <tr>
-        <td>Dish:</td>
-        <td><select name="dish_id"><option  value="2">Cashew Nuts and White Mushrooms</option><option  value="3">Dried Mulberries</option><option  value="4">Eggplant with Chili Sauce</option><option  value="6">General Tso's Chicken</option><option  value="5">Red Bean Bun</option><option  value="1">Walnut Bun</option></select></td>
+        <td>메뉴:</td>
+        <td><select name="dish_id"><option value="6">'특별'한 치킨</option><option value="5">단팥 번</option><option value="3">말린 오디</option><option value="4">칠리소스 가지 볶음</option><option value="2">캐슈너트와 양송이버섯</option><option value="1">호두 번</option></select></td>
     </tr>
     <tr>
         <td colspan="2" align="center">
-            <input name="info" value="Get Dish Info" type="submit" /></td>
+            <input name="info" value="메뉴 정보" type="submit" /></td>
     </tr>
 </table>
 </form>

@@ -2,7 +2,7 @@
 <table>
     <?php if ($errors) { ?>
         <tr>
-            <td>You need to correct the following errors:</td>
+            <td>다음 항목을 수정해주세요.:</td>
             <td><ul>
                 <?php foreach ($errors as $error) { ?>
                     <li><?= $form->encode($error) ?></li>
@@ -14,7 +14,6 @@
     <tr><td>Name:</td><td><?= $form->input('text', ['name' => 'from_name']) ?></td></tr>
     <tr><td>Address 1:</td><td><?= $form->input('text', ['name' => 'from_address1']) ?></td></tr>
     <tr><td>Address 2:</td><td><?= $form->input('text', ['name' => 'from_address2']) ?></td></tr>
-    <tr><td>City:</td><td><?= $form->input('text', ['name' => 'from_city']) ?></td></tr>
     <tr><td>State:</td><td><?= $form->select($GLOBALS['states'], ['name' => 'from_state']) ?></td></tr>
     <tr><td>ZIP:</td><td><?= $form->input('text', ['name' => 'from_zip', 'size' => 5]) ?></td></tr>
 
@@ -22,7 +21,6 @@
     <tr><td>Name:</td><td><?= $form->input('text', ['name' => 'to_name']) ?></td></tr>
     <tr><td>Address 1:</td><td><?= $form->input('text', ['name' => 'to_address1']) ?></td></tr>
     <tr><td>Address 2:</td><td><?= $form->input('text', ['name' => 'to_address2']) ?></td></tr>
-    <tr><td>City:</td><td><?= $form->input('text', ['name' => 'to_city']) ?></td></tr>
     <tr><td>State:</td><td><?= $form->select($GLOBALS['states'], ['name' => 'to_state']) ?></td></tr>
     <tr><td>ZIP:</td><td><?= $form->input('text', ['name' => 'to_zip', 'size' => 5]) ?></td></tr>
 

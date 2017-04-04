@@ -1,5 +1,5 @@
 <?php
 for ($f = -50; $f <= 50; $f += 5) {
     $c = ($f - 32) * (5/9);
-    printf("%d degrees F = %d degrees C\n", $f, $c);
+    printf("화씨 %d도 = 섭씨 %d도\n", $f, $c);
 }

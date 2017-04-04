@@ -1,6 +1,6 @@
 <?php
-/* Since this is operating on all form data, it looks directly at $_POST
- * instead of a validated $input array */
+/* 폼 데이터를 처리하는 부분이므로, $input 배열 대신
+$_POST 변수를 직접 사용한다. */
 function process_form() {
     print '<ul>';
     foreach ($_POST as $k => $v) {

@@ -1,20 +1,20 @@
 <form method="POST" action="{{d}}order.php">
 <table>
     
-    <tr><th>Product</th><td>Quantity</td></tr>
-    <tr><td>Braised Sea Cucumber:</td>
+    <tr><th>메뉴</th><td>수량</td></tr>
+    <tr><td>데친 해삼:</td>
         <td><input name="quantity_cuke" type="text" value="0" /></td></tr>
-    <tr><td>Sauteed Pig's Stomach:</td>
+    <tr><td>&quot;순대&quot;:</td>
         <td><input name="quantity_stomach" type="text" value="0" /></td></tr>
-    <tr><td>Sauteed Tripe with Wine Sauce:</td>
+    <tr><td>와인 소스 양대창:</td>
         <td><input name="quantity_tripe" type="text" value="0" /></td></tr>
-    <tr><td>Stewed Pork with Taro:</td>
+    <tr><td>돼지고기 토란국:</td>
         <td><input name="quantity_taro" type="text" value="0" /></td></tr>
-    <tr><td>Baked Giblets with Salt:</td>
+    <tr><td>곱창 소금 구이:</td>
         <td><input name="quantity_giblets" type="text" value="0" /></td></tr>
-    <tr><td>Abalone with Marrow and Duck Feet:</td>
+    <tr><td>전복 호박 볶음:</td>
         <td><input name="quantity_abalone" type="text" value="0" /></td></tr>
-    <tr><td colspan="2" align="center"><input value="Order" type="submit" />    </td></tr>
+    <tr><td colspan="2" align="center"><input value="주문하기" type="submit" />    </td></tr>
 
 </table>
 </form>

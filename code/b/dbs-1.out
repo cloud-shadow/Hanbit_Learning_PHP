@@ -1,9 +1,9 @@
 <table>
-<tr><th>Dish Name</th><th>Price</th><th>Spicy?</th></tr>
-<tr><td>Walnut Bun</td><td>$1.00</td><td>No</td></tr>
-<tr><td>Red Bean Bun</td><td>$1.00</td><td>No</td></tr>
-<tr><td>Dried Mulberries</td><td>$3.00</td><td>No</td></tr>
-<tr><td>Cashew Nuts and White Mushrooms</td><td>$4.95</td><td>No</td></tr>
-<tr><td>General Tso's Chicken</td><td>$5.50</td><td>Yes</td></tr>
-<tr><td>Eggplant with Chili Sauce</td><td>$6.50</td><td>Yes</td></tr>
+<tr><th>메뉴명</th><th>가격</th><th>맵기</th></tr>
+<tr><td>호두 번</td><td>$1.00</td><td>No</td></tr>
+<tr><td>단팥 번</td><td>$1.00</td><td>No</td></tr>
+<tr><td>말린 오디</td><td>$3.00</td><td>No</td></tr>
+<tr><td>캐슈너트와 양송이버섯</td><td>$4.95</td><td>No</td></tr>
+<tr><td>'특별'한 치킨</td><td>$5.50</td><td>Yes</td></tr>
+<tr><td>칠리소스 가지 볶음</td><td>$6.50</td><td>Yes</td></tr>
 </table>

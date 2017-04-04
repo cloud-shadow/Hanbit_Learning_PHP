@@ -1,6 +1,6 @@
 <?php
 
-// The html_img2() function from the previous exercise is saved in this file
+// 2번 답안의 html_img2() 함수를 html-img2.php 파일에 저장했다고 간주한다.
 include "html-img2.php";
 
 $image_path = '/images/';

@@ -16,7 +16,7 @@ class Ingredient {
         return $this->cost;
     }
 
-    // This method sets the cost to a new value
+    // cost에 값을 새로 할당하는 메서드.
     public function setCost($cost) {
         $this->cost = $cost;
     }

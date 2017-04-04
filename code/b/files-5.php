@@ -3,29 +3,29 @@ function validate_form() {
     $input = array();
     $errors = array();
 
-    // Make sure a filename is specified
+    // 파일명이 올바른지 확인한다.
     $input['file'] = trim($_POST['file'] ?? '');
     if (0 == strlen($input['file'])) {
-        $errors[] = 'Please enter a filename.';
+        $errors[] = '파일명을 입력해주세요.';
     } else {
-        // Make sure the full filename is underneath the web
-        // server's document root
+        // 전체 파일 경로가
+        // 웹 서버의 문서 루트 하위에 있는지 확인한다.
         $full = $_SERVER['DOCUMENT_ROOT'] . '/' . $input['file'];
-        // Use realpath() to resolve any .. sequences or
-        // symbolic links
+        // realpath() 를 이용해 .. 문자열이나
+        // 심볼릭 링크를 변환한다.
         $full = realpath($full);
         if ($full === false) {
-            $errors[] = "Please enter a valid filename.";
+            $errors[] = "올바른 파일명을 입력해주세요.";
         } else {
-            // Make sure $full begins with the document root directory
+            // f$ull 값이 문서 루트 디렉터리로 시작하는지 검사한다.
             $docroot_len = strlen($_SERVER['DOCUMENT_ROOT']);
             if (substr($full, 0, $docroot_len) != $_SERVER['DOCUMENT_ROOT']) {
-                $errors[] = 'File must be under document root.';
+                $errors[] = '문서 루트 안에 있는 파일을 입력해주세요.';
             } else if (strcasecmp(substr($full, -5), '.html') != 0) {
-                $errors[] = 'File name must end in .html';
+                $errors[] = '파일명은 .html로 끝나야 합니다.';
             } else {
-                // If it's OK, put the full path in $input so we can use
-                // it in process_form();
+                // 이상 없으면i n$put의 전체 경로를
+                // process_form()에 전달한다.
                 $input['full'] = $full;
             }
         }

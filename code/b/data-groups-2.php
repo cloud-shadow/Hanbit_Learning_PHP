@@ -1,37 +1,38 @@
 <?php
-$census = ['New York, NY' => 8175133,
-           'Los Angeles, CA' => 3792621,
-           'Chicago, IL' => 2695598,
-           'Houston, TX' => 2100263,
-           'Philadelphia, PA' => 1526006,
-           'Phoenix, AZ' => 1445632,
-           'San Antonio, TX' => 1327407,
-           'San Diego, CA' => 1307402,
-           'Dallas, TX' => 1197816,
-           'San Jose, CA' => 945942];
+$census = ['Suwon, GG' => 1194313,
+           'Changwon, GN' => 1059241,
+           'Goyang, GG' => 990073,
+           'Yongin, GG' => 971327,
+           'Cheongju, CB' => 833276,
+           'Jeonju, JB' => 658172,
+           'Cheonan, CN' => 629062,
+           'Gimhae, GN' => 534124,
+           'Pohang, GB' => 511804,
+           'Jinju, GN' => 349788];
 
-// Sort the associative array by value
+// 값을 기준으로 연관 배열을 정렬한다.
 asort($census);
 
 print "<table>\n";
-print "<tr><th>City</th><th>Population</th></tr>\n";
+print "<tr><th>도시</th><th>인구</th></tr>\n";
 $total = 0;
 foreach ($census as $city => $population) {
     $total += $population;
     print "<tr><td>$city</td><td>$population</td></tr>\n";
 }
-print "<tr><td>Total</td><td>$total</td></tr>\n";
+print "<tr><td>합계</td><td>$total</td></tr>\n";
 print "</table>";
 
-// Sort the associative array by key
+// 키를 기준으로 연관 배열을 정렬한다.
 ksort($census);
 
 print "<table>\n";
-print "<tr><th>City</th><th>Population</th></tr>\n";
+print "<tr><th>도시</th><th>인구</th></tr>\n";
+
 $total = 0;
 foreach ($census as $city => $population) {
     $total += $population;
     print "<tr><td>$city</td><td>$population</td></tr>\n";
 }
-print "<tr><td>Total</td><td>$total</td></tr>\n";
+print "<tr><td>합계</td><td>$total</td></tr>\n";
 print "</table>";

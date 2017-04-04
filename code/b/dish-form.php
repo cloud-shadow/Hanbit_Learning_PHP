@@ -2,7 +2,7 @@
 <table>
     <?php if ($errors) { ?>
         <tr>
-            <td>You need to correct the following errors:</td>
+        <td>다음 항목을 수정해주세요:</td>
             <td><ul>
                 <?php foreach ($errors as $error) { ?>
                     <li><?= $form->encode($error) ?></li>
@@ -10,13 +10,13 @@
             </ul></td>
     <?php }  ?>
     <tr>
-        <td>Dish:</td>
+        <td>메뉴:</td>
         <td><?= $form->select($dishes,['name' => 'dish_id']) ?></td>
     </tr>
     <tr>
         <td colspan="2" align="center">
             <?= $form->input('submit', ['name' => 'info',
-                                        'value' => 'Get Dish Info']) ?></td>
+                             'value' => '메뉴 정보']) ?></td>
     </tr>
 </table>
 </form>
