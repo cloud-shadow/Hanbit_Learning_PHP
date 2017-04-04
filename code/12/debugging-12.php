@@ -1,7 +1,7 @@
 <?php
-$name = 'Umberto';
+$name = '이순신';
 function say_hello( ) {
-    print 'Hello, ';
+    print '안녕하세요, ';
     print global $name;
 }
 say_hello( );

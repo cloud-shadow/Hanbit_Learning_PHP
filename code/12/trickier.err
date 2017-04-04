@@ -1,1 +1,1 @@
-PHP Parse error:  syntax error, unexpected 'Welcome' (T_STRING) in {{d}}trickier.php on line 4
+PHP Parse error:  syntax error, unexpected '안녕하세요' (T_STRING) in {{d}}trickier.php on line 4

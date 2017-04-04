@@ -1,5 +1,5 @@
 <?php
 if $logged_in) {
-        print "Welcome, user.";
+        print "안녕하세요. 회원님";
     }
 ?>
