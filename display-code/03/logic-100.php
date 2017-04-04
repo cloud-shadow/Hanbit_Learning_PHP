@@ -1,3 +1,3 @@
 if ($logged_in) {
-   print "Welcome aboard, trusted user.";
+    print "환영합니다 정회원님.";
 }

@@ -1,5 +1,4 @@
 if ($logged_in) {
-    print "Welcome aboard, trusted user.";
+    print "환영합니다 정회원님.";
 } else {
-    print "Howdy, stranger.";
-}
+    print "반갑습니다 방문자님.";}

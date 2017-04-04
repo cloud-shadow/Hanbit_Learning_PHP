@@ -1,12 +1,12 @@
 if ($age > 17) {
-    print "You are old enough to download the movie.";
+    print "이 영화를 다운로드할 수 있는 연령입니다.";
 }
 if ($age >= 65) {
-    print "You are old enough for a discount.";
+    print "할인 적용 대상입니다.";
 }
 if ($celsius_temp <= 0) {
-    print "Uh-oh, your pipes may freeze.";
+    print "이런, 상수도관이 얼겠어요.";
 }
 if ($kelvin_temp < 20.3) {
-    print "Your hydrogen is a liquid or a solid now.";
+    print "수소가 액화되기 시작합니다.";
 }

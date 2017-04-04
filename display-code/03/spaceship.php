@@ -1,21 +1,21 @@
-// $a is a negative number since 1 is less than 12.7
+// 1은 12.7보다 작으므로 $a는 음수다.
 $a = 1 <=> 12.7;
 
-// $b is a positive number since "c" comes after "b"
+// "c"는 "b"보다 나중에 나오므로 $b는 양수다.
 $b = "charlie" <=> "bob";
 
-// Comparing numeric strings works like < and >, not like strcmp()
+// strcmp()와는 달리 <와 >처럼 비교한다.
 $x = '6 pack' <=> '55 card stud';
 if ($x > 0) {
-    print 'The string "6 pack" is greater than than the string "55 card stud".';
+    print '문자열 "6 pack"은 문자열 "55 card stud"보다 크다.';
 } elseif ($x < 0) {
-    print 'The string "6 pack" is less than the string "55 card stud".';
+    print '문자열 "6 pack"은 문자열 "55 card stud"보다 작다.';
 }
 
-// Comparing numeric strings works like < and >, not like strcmp()
-$x ='6 pack' <=> 55;
+// strcmp()와는 달리 <와 >처럼 비교한다.
+$x = '6 pack' <=> 55;
 if ($x > 0) {
-    print 'The string "6 pack" is greater than the number 55.';
+    print '문자열 "6 pack"은 숫자 55보다 크다.';
 } elseif ($x < 0) {
-    print 'The string "6 pack" is less than the number 55.';
+    print '문자열 "6 pack"은 숫자 55보다 작다.';
 }
