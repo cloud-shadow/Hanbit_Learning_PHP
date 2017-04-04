@@ -1,1 +1,1 @@
-DELETE FROM dishes WHERE dish_name LIKE '%Shrimp'
+DELETE FROM dishes WHERE dish_name LIKE '%»õ¿ì'

@@ -1,2 +1,2 @@
 INSERT INTO dishes (dish_name, is_spicy)
-    VALUES ('Salt Baked Scallops', 0)
+    VALUES ('조개구이', 0)

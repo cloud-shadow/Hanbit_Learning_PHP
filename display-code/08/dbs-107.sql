@@ -1,2 +1,2 @@
-UPDATE tablename SET column1=value1[, column2=value2,
-     column3=value3, ...] [WHERE where_clause]
+UPDATE 테이블명 SET 컬럼1=값1[, 컬럼2=값2,
+   컬럼3=값3, ...] [WHERE 표현식]

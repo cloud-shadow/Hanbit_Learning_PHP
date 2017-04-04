@@ -1,1 +1,1 @@
-UPDATE dishes SET price = price * 2 WHERE dish_name LIKE '%chili%'
+UPDATE dishes SET price = price * 2 WHERE dish_name LIKE '%¸Å¿î%'
