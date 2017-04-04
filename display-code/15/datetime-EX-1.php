@@ -1,4 +1,4 @@
 $d = new DateTime();
-print 'It is now: ';
+print '현재 시각: ';
 print $d->format('r');
 print "\n";
