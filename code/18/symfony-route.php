@@ -16,8 +16,7 @@ class MenuController extends Controller
     public function showAction()
     {
         $now = new \DateTime();
-        $items = [ "Fried Potatoes", "Boiled Potatoes", "Baked Potatoes" ];
-
+        $items = [ "감자 튀김", "찐 감자", "구운 감자" ];
         return $this->render("show-menu.html.twig",
                              [ 'when' => $now,
                                'what' => $items ]);
