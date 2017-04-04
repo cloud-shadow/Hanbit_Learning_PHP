@@ -1,5 +1,5 @@
 <html>
-<head><title>PHP says hello</title></head>
+<head><title>PHP 첫인사</title></head>
 <body>
 <b>
 Hello, World!</b>

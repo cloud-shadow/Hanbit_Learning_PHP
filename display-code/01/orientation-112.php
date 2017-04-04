@@ -1,30 +1,29 @@
 <?php
-// Use the SQLite database 'dinner.db'
+// SQLite 데이터베이스 'dinner.db'를 사용
 $db = new PDO('sqlite:dinner.db');
-// Define what the allowable meals are
-$meals = array('breakfast','lunch','dinner');
-// Check if submitted form parameter "meal" is one of
-// "breakfast", "lunch", or "dinner"
+// 허용되는 메뉴 구분 정의
+$meals = array('아침','점심','저녁');
+// 제출된 폼 매개변수 "meal" 값이
+// "아침", "점심", "저녁" 중 하나인지 확인
 if (in_array($_POST['meal'], $meals)) {
-    // If so, get all of the dishes for the specified meal
+    // 맞는다면, 해당하는 모든 요리 가져오기
     $stmt = $db->prepare('SELECT dish,price FROM meals WHERE meal LIKE ?');
     $stmt->execute(array($_POST['meal']));
     $rows = $stmt->fetchAll();
-    // If no dishes were found in the database, say so
+    // 데이터베이스에서 아무 요리도 발견하지 못했다면
     if (count($rows) == 0) {
-        print "No dishes available.";
+        print "가능한 요리가 없습니다.";
     } else {
-        // Print out each dish and its price as a row
-        // in an HTML table
-        print '<table><tr><th>Dish</th><th>Price</th></tr>';
+        // 각 요리와 가격을H TML 표에 한 줄씩 출력하기
+        print '<table><tr><th>요리</th><th>가격</th></tr>';
         foreach ($rows as $row) {
             print "<tr><td>$row[0]</td><td>$row[1]</td></tr>";
         }
         print "</table>";
     }
 } else {
-    // This message prints if the submitted parameter "meal" isn't
-    // "breakfast", "lunch", or "dinner"
-    print "Unknown meal.";
+    // "meal" 변수가 "아침", "점심", "저녁" 중 하나가 아니라면
+    // 다음을 출력
+    print "알 수 없는 메뉴입니다.";
 }
 ?>
