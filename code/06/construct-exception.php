@@ -6,7 +6,7 @@ class Entree {
 
     public function __construct($name, $ingredients) {
         if (! is_array($ingredients)) {
-            throw new Exception('$ingredients must be an array');
+            throw new Exception('$ingredients가 배열이 아닙니다.');
         }
         $this->name = $name;
         $this->ingredients = $ingredients;

@@ -1,3 +1,3 @@
 <?php
 
-\Tiny\Fruit::munch("banana");
+\Tiny\Fruit::munch("바나나");

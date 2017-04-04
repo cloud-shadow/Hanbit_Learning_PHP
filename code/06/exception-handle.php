@@ -1,10 +1,10 @@
 <?php
 
 try {
-    $drink = new Entree('Glass of Milk', 'milk');
-    if ($drink->hasIngredient('milk')) {
-        print "Yummy!";
+    $drink = new Entree('우유 한 잔', '우유');
+    if ($drink->hasIngredient('우유')) {
+        print "맛있어!";
     }
 } catch (Exception $e) {
-    print "Couldn't create the drink: " . $e->getMessage();
+    print "음료를 준비할 수 없습니다: " . $e->getMessage();
 }

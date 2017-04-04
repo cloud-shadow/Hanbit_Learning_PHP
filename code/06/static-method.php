@@ -9,6 +9,6 @@ class Entree {
     }
 
     public static function getSizes() {
-        return array('small','medium','large');
+        return array('소','중','대');
     }
 }

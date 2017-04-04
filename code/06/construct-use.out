@@ -1,22 +1,22 @@
 object(Entree)#1 (2) {
   ["name"]=>
-  string(12) "Chicken Soup"
+  string(16) "닭고기 수프"
   ["ingredients"]=>
   array(2) {
     [0]=>
-    string(7) "chicken"
+    string(9) "닭고기"
     [1]=>
-    string(5) "water"
+    string(3) "물"
   }
 }
 object(Entree)#2 (2) {
   ["name"]=>
-  string(16) "Chicken Sandwich"
+  string(22) "닭고기 샌드위치"
   ["ingredients"]=>
   array(2) {
     [0]=>
-    string(7) "chicken"
+    string(9) "닭고기"
     [1]=>
-    string(5) "bread"
+    string(3) "빵"
   }
 }

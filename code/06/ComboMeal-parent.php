@@ -6,7 +6,7 @@ class ComboMeal extends Entree {
         parent::__construct($name, $entrees);
         foreach ($entrees as $entree) {
             if (! $entree instanceof Entree) {
-                throw new Exception('Elements of $entrees must be Entree objects');
+                throw new Exception('$entrees의 원소는 객체여야 합니다.');
             }
         }
     }

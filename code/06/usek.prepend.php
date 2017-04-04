@@ -4,7 +4,7 @@ namespace Tiny\Eating;
 
 class Fruit {
     public static function munch($a) {
-    print "Here is a tiny munch of $a.";
+    print "$a 한 입 드셔보세요.";
 }
 }
 

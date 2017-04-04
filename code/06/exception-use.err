@@ -1,5 +1,5 @@
-PHP Fatal error:  Uncaught Exception: $ingredients must be an array in {{d}}construct-exception.php:9
+PHP Fatal error:  Uncaught Exception: $ingredients가 배열이 아닙니다. in {{d}}construct-exception.php:9
 Stack trace:
-#0 {{d}}exception-use.php(2): Entree->__construct('Glass of Milk', 'milk')
+#0 {{d}}exception-use.php(2): Entree->__construct('우유 한 잔', '우유')
 #1 {main}
   thrown in {{d}}construct-exception.php on line 9
