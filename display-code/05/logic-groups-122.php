@@ -3,9 +3,9 @@ function countdown($top) {
         print "$top..";
         $top--;
     }
-    print "boom!\n";
+    print "Æã!\n";
 }
 
 $counter = 5;
 countdown($counter);
-print "Now, counter is $counter";
+print "counterÀÇ °ª: $counter";

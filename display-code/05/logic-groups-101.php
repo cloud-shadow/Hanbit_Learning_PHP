@@ -1,2 +1,2 @@
-$number_to_display = number_format(320853904);
-print "The population of the US is about: $number_to_display";
+$number_to_display = number_format(50801405);
+print "한국의 대략적인 인구: $number_to_display";

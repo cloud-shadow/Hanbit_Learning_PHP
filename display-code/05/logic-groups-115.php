@@ -1,13 +1,13 @@
-$dinner = 'Curry Cuttlefish';
+$dinner = '갑오징어 카레';
 
-function vegetarian_dinner( ) {
+function vegetarian_dinner() {
     global $dinner;
-    print "Dinner was $dinner, but now it's ";
-    $dinner = 'Sauteed Pea Shoots';
+    print "저녁 메뉴는 $dinner 였습니다만, 지금은 ";
+    $dinner = '완두싹 볶음';
     print $dinner;
-    print "\n";
+    print "입니다.\n";
 }
 
-print "Regular Dinner is $dinner.\n";
-vegetarian_dinner( );
-print "Regular dinner is $dinner";
+print "일반 저녁 메뉴는 $dinner 입니다.\n";
+vegetarian_dinner();
+print "일반 저녁 메뉴는 $dinner 입니다.";
