@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-<p> At {{ when|date("g:i a") }}, here is what's available: </p>
+<p>현재 시각 {{ when|date("g:i a") }}, 주문 가능 메뉴</p>
 <ul>
 {% for item in what %}
 <li>{{ item }}</li>

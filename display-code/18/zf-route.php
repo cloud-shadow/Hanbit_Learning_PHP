@@ -8,7 +8,7 @@ class MenuController extends AbstractActionController
     public function showAction()
     {
         $now = new \DateTime();
-        $items = [ "Fried Potatoes", "Boiled Potatoes", "Baked Potatoes" ];
+        $items = [ "°¨ÀÚ Æ¢±è", "Âğ °¨ÀÚ", "±¸¿î °¨ÀÚ" ];
 
         return new ViewModel(array('when' => $now,
                                    'what' => $items));

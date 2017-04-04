@@ -14,8 +14,7 @@ class MenuController extends Controller
     public function showAction()
     {
         $now = new \DateTime();
-        $items = [ "Fried Potatoes", "Boiled Potatoes", "Baked Potatoes" ];
-
+        $items = [ "°¨ÀÚ Æ¢±è", "Âğ °¨ÀÚ", "±¸¿î °¨ÀÚ" ];
         return $this->render("show-menu.html.twig",
                              [ 'when' => $now,
                                'what' => $items ]);

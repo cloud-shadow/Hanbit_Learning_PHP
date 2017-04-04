@@ -1,6 +1,6 @@
 Route::get('/show', function() {
     $now = new DateTime();
-    $items = [ "Fried Potatoes", "Boiled Potatoes", "Baked Potatoes" ];
+    $items = [ "°¨ÀÚ Æ¢±è", "Âğ °¨ÀÚ", "±¸¿î °¨ÀÚ" ];
     return view('show-menu', [ 'when' => $now,
                                'what' => $items ]);
 });
