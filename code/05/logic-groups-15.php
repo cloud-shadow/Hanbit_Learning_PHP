@@ -1,5 +1,4 @@
 <?php
-
 function restaurant_check($meal, $tax, $tip) {
     $tax_amount = $meal * ($tax / 100);
     $tip_amount = $meal * ($tip / 100);
@@ -13,7 +12,6 @@ $tip = 10;
 
 while(($cost = restaurant_check($meal,$tax,$tip)) < $cash_on_hand) {
     $tip++;
-    print "I can afford a tip of $tip% ($cost)\n";
+    print "팁으로 $tip% ($cost) 정도는 낼 수 있지\n";
 }
-
 ?>

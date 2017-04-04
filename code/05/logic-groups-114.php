@@ -1,11 +1,11 @@
 <?php
-$dinner = 'Curry Cuttlefish';
+$dinner = '갑오징어 카레';
 
-function hungry_dinner( ) {
-    $GLOBALS['dinner'] .= ' and Deep-Fried Taro';
+function hungry_dinner() {
+    $GLOBALS['dinner'] .= ' 그리고 바싹 익힌 토란';
 }
 
-print "Regular dinner is $dinner";
+print "일반 저녁 메뉴는 $dinner 입니다.";
 print "\n";
-hungry_dinner( );
-print "Hungry dinner is $dinner";
+hungry_dinner();
+print "저녁 특선 메뉴는 $dinner 입니다.";

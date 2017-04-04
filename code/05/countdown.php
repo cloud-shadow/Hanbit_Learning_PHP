@@ -4,5 +4,5 @@ function countdown(int $top) {
         print "$top..";
         $top--;
     }
-    print "boom!\n";
+    print "펑!\n";
 }

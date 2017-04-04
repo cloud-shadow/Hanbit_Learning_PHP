@@ -2,10 +2,10 @@
 
 require 'restaurant-functions.php';
 
-/* $25 check, plus 8.875% tax, plus 20% tip */
+/* 음식가격 $25, 더하기 부가세 8.875%, 더하기 팁 20% */
 $total_bill = restaurant_check(25, 8.875, 20);
 
-/* I've got $30 */
+/* 가진돈 $30 */
 $cash = 30;
 
-print "I need to pay with " . payment_method($cash, $total_bill);
+print "결제 방법은 " . payment_method($cash, $total_bill);

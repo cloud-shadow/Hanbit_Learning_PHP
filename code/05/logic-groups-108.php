@@ -1,6 +1,6 @@
 <?php
 if (restaurant_check(15.22, 8.25, 15) < 20) {
-    print 'Less than $20, I can pay cash.';
+    print '$20가 안되니, 현금으로 내야지.';
 } else {
-    print 'Too expensive, I need my credit card.';
+    print '너무 비싼데, 신용카드를 써야겠어.';
 }

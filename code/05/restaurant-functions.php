@@ -10,9 +10,9 @@ function restaurant_check($meal, $tax, $tip) {
 
 function payment_method($cash_on_hand, $amount) {
     if ($amount > $cash_on_hand) {
-        return 'credit card';
+        return '신용카드';
     } else {
-        return 'cash';
+        return '현금';
     }
 }
 

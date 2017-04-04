@@ -4,9 +4,9 @@ function countdown($top) {
         print "$top..";
         $top--;
     }
-    print "boom!\n";
+    print "펑!\n";
 }
 
 $counter = 5;
 countdown($counter);
-print "Now, counter is $counter";
+print "counter의 값: $counter";

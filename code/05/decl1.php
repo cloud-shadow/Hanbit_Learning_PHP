@@ -1,12 +1,12 @@
 <?php
-function countdown(int $top) {
+function countdown($top) {
     while ($top > 0) {
         print "$top..";
         $top--;
     }
-    print "boom!\n";
+    print "펑!\n";
 }
 
 $counter = 5;
 countdown($counter);
-print "Now, counter is $counter";
+print "counter의 값: $counter";
