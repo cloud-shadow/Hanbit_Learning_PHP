@@ -1,5 +1,5 @@
-<html><head><title>Page with cookies</title><head>
+<html><head><title>쿠키 사용 페이지</title></head>
 <body>
-This page sets a cookie properly, because the PHP block
-with setcookie( ) in it comes before all of the HTML.
+setcookie()가 있는 PHP 블록이 모든 HTML보다 먼저 나오기 때문에
+이 페이지는 쿠키가 올바르게 설정됩니다.
 </body></html>

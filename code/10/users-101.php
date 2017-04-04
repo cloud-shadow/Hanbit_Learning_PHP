@@ -1,14 +1,14 @@
 <?php
 require 'FormHelper.php';
 
-session_start( );
+session_start();
 
-$main_dishes = array('cuke' => 'Braised Sea Cucumber',
-                     'stomach' => "Sauteed Pig's Stomach",
-                     'tripe' => 'Sauteed Tripe with Wine Sauce',
-                     'taro' => 'Stewed Pork with Taro',
-                     'giblets' => 'Baked Giblets with Salt',
-                     'abalone' => 'Abalone with Marrow and Duck Feet');
+$main_dishes = array('cuke' => '데친 해삼',
+                     'stomach' => "순대",
+                     'tripe' => '와인 소스 양대창',
+                     'taro' => '돼지고기 토란국',
+                     'giblets' => '곱창 소금 구이',
+                     'abalone' => '전복 호박 볶음');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     list($errors, $input) = validate_form();
@@ -22,11 +22,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 function show_form($errors = array()) {
-    // No defaults of our own, no nothing to pass to the
-    // FormHelper constructor
+    // 처음에는 아무런 값도 없으므로
+    // FormHelper 생성자에 아무것도 전달하지 않는다.
     $form = new FormHelper();
 
-    // Build up the error HTML to use later
+    // 나중에 사용할 오류 출력 HTML 생성
     if ($errors) {
         $errorHtml = '<ul><li>';
         $errorHtml .= implode('</li><li>',$errors);
@@ -36,16 +36,15 @@ function show_form($errors = array()) {
     }
 
 
-    // This form is small, so we'll just print out its components
-    // here.
+    // 간단한 폼이므로, 출력 컴포넌트를 여기에서 바로 출력한다.
 print <<<_FORM_
 <form method="POST" action="{$form->encode($_SERVER['PHP_SELF'])}">
   $errorHtml
-  Dish: {$form->select($GLOBALS['main_dishes'],['name' => 'dish'])} <br/>
+  메뉴: {$form->select($GLOBALS['main_dishes'],['name' => 'dish'])} <br/>
 
-  Quantity: {$form->input('text',['name' => 'quantity'])} <br/>
+  수량: {$form->input('text',['name' => 'quantity'])} <br/>
 
-  {$form->input('submit',['value' => 'Order'])}
+  {$form->input('submit',['value' => '주문하기'])}
 </form>
 _FORM_;
 }
@@ -53,17 +52,16 @@ _FORM_;
 function validate_form() {
     $input = array();
     $errors = array();
-
-    // The dish selected in the menu must be valid
+    // 선택된 메뉴가 올바른 메뉴인지 확인
     $input['dish'] = $_POST['dish'] ?? '';
     if (! array_key_exists($input['dish'], $GLOBALS['main_dishes'])) {
-        $errors[] = 'Please select a valid dish.';
+        $errors[] = '올바른 메뉴를 선택해주세요.';
     }
 
     $input['quantity'] = filter_input(INPUT_POST, 'quantity', FILTER_VALIDATE_INT,
                                       array('options' => array('min_range' => 1)));
     if (($input['quantity'] === false) || ($input['quantity'] === null)) {
-        $errors[] = 'Please enter a quantity.';
+        $errors[] = '수량을 입력해주세요.';
     }
     return array($errors, $input);
 }
@@ -72,6 +70,6 @@ function process_form($input) {
     $_SESSION['order'][] = array('dish'     => $input['dish'],
                                  'quantity' => $input['quantity']);
 
-    print 'Thank you for your order.';
+    print '주문이 완료되었습니다.';
 }
 ?>

@@ -1,6 +1,6 @@
 <form method="POST" action="{{!}}">
   
-  Username: <input name="username" type="text" /> <br/>
-  Password: <input name="password" type="password" /> <br/>
-  <input value="Log In" type="submit" />
+  사용자명: <input name="username" type="text" /> <br/>
+  비밀번호: <input name="password" type="password" /> <br/>
+  <input value="로그인" type="submit" />
 </form>

@@ -4,7 +4,7 @@ function validate_form( ) {
     $input = array();
     $errors = array();
 
-    // This gets set to true only if the submitted password matches
+    // 이 변수는 제출된 비밀번호가 일치할 때만 true로 설정된다.
     $password_ok = false;
 
     $input['username'] = $_POST['username'] ?? '';
@@ -13,12 +13,12 @@ function validate_form( ) {
     $stmt = $db->prepare('SELECT password FROM users WHERE username = ?');
     $stmt->execute($input['username']);
     $row = $stmt->fetch();
-    // If there's no row, then the username didn't match any rows
+    // 반환된 로우가 없으면, 존재하지 않는 사용자명이다.
     if ($row) {
         $password_ok = password_verify($submitted_password, $row[0]);
     }
     if (! $password_ok) {
-        $errors[] = 'Please enter a valid username and password.';
+        $errors[] = '올바른 사용자명과 비밀번호를 입력해주세요.';
     }
 
     return array($errors, $input);
