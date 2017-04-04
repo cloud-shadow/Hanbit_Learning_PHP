@@ -4,5 +4,5 @@ if (is_writeable($log_file)) {
     fwrite($fh, $_SESSION['username'] . ' at ' . strftime('%c') . "\n");
     fclose($fh);
 } else {
-    print "Cant write to log file.";
+    print "로그 파일을 쓸 수 없습니다.";
 }

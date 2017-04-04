@@ -1,22 +1,22 @@
 try {
     $db = new PDO('sqlite:/tmp/restaurant.db');
 } catch (Exception $e) {
-    print "Couldn't connect to database: " . $e->getMessage();
+    print "데이터베이스에 접속할 수 없습니다: " . $e->getMessage();
     exit();
 }
 
-// Open dishes.txt for writing
+// dishes.txt 파일을 쓰기 모드로 열기
 $fh = fopen('/usr/local/dishes.txt','wb');
 if (! $fh) {
-    print "Error opening dishes.txt: $php_errormsg";
+    print "dishes.txt 파일을 열 수 없습니다: $php_errormsg";
 } else {
     $q = $db->query("SELECT dish_name, price FROM dishes");
     while($row = $q->fetch( )) {
-        // Write each line (with a newline on the end) to
-        // dishes.txt
-        fwrite($fh, "The price of $row[0] is $row[1] \n");
+        // 각 줄을d ishes.txt에 쓰기
+        // (줄 마지막에 개행문자 추가)
+        fwrite($fh, "$row[0]의 가격은 $row[1] \n");
     }
     if (! fclose($fh)) {
-        print "Error closing dishes.txt: $php_errormsg";
+        print "dishes.txt 파일을 닫을 수 없습니다: $php_errormsg";
     }
 }
