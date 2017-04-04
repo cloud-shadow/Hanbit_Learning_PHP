@@ -5,4 +5,4 @@ if (isset($_SESSION['count'])) {
 } else {
     $_SESSION['count'] = 1;
 }
-print "You've looked at this page " . $_SESSION['count'] . ' times.';
+print "당신은 이 페이지를 " . $_SESSION['count'] . '번 보셨습니다.';
