@@ -1,39 +1,39 @@
 <?php 
 
-// Formats we want to support
+// 지원하는 형식
 $formats = array('application/json','text/html','text/plain');
-// Response format if not specified
+// 응답 형식이 지정되지 않았을 때
 $default_format = 'application/json';
 
-// Was a response format supplied?
+// 응답 형식이 지정됐는가?
 if (isset($_SERVER['HTTP_ACCEPT'])) {
-    // If a supported format is supplied, use it
+// 지정됐다면 그대로 사용한다.
     if (in_array($_SERVER['HTTP_ACCEPT'], $formats)) {
         $format = $_SERVER['HTTP_ACCEPT'];
     }
-    // An unsupported format was supplied, so return an error
+// 지원되지 않는 형식일 경우 오류를 반환한다.
     else {
-        // 406 means "You want a response in a format I can't generate"
+// 406은 "지원하지 않는 응답 형식입니다"를 의미한다.
         http_response_code(406);
-        // Exiting now means no response body, which is OK
+// 여기서 종료하면 요청 본문에 아무 내용도 없지만, 문제 없다.
         exit();
     }
 } else {
     $format = $default_format;
 }
 
-// Figure out what time it is
+// 현재 시각 확인
 $response_data = array('now' => time());
-// Tell the client what kind of content we're sending
+// 전송 응답 형식을 클라이언트에 알려주기
 header("Content-Type: $format");
-// Print the time in a format-appropriate way
+// 지정된 형식으로 시각을 출력하기
 if ($format == 'application/json') {
     print json_encode($response_data);
 }
 else if ($format == 'text/html') { ?>
 <!doctype html>
   <html>
-    <head><title>Clock</title></head>
+    <head><title>시계</title></head>
     <body><time><?= date('c', $response_data['now']) ?></time></body>
   </html>
 <?php 

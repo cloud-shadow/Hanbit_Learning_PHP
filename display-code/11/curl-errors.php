@@ -1,21 +1,21 @@
-// A pretend API endpoint that doesn't exist 
+// 존재하지 않은 API를 임의로 설정
 $c = curl_init('http://api.example.com');
 curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
 $result = curl_exec($c);
-// Get all the connect info, whether or not it succeeded
+// 성공 여부에 관계없이 접속 정보를 모두 가져오기
 $info = curl_getinfo($c);
 
-// Something went wrong with the connection
+// 접속에 문제가 있을 때
 if ($result === false) {
-    print "Error #" . curl_errno($c) . "\n";
-    print "Uh-oh! cURL says: " . curl_error($c) . "\n";
+    print "오류 #" . curl_errno($c) . "\n";
+    print "이런! cURL 오류입니다: " . curl_error($c) . "\n";
 }
-// HTTP response codes in the 400s and 500s mean errors
+// 400번대와 500번대 오류 코드는 HTTP 응답 오류다.
 else if ($info['http_code'] >= 400) {
-    print "The server says HTTP error {$info['http_code']}.\n";
+    print "서버가 HTTP 오류를 반환했습니다 {$info['http_code']}.\n";
 }
 else {
-    print "A successful result!\n";
+    print "접속에 성공했습니다!\n";
 }
-// The request info includes timing statistics as well
-print "By the way, this request took {$info['total_time']} seconds.\n";
+// 요청 정보 중에는 소요 시간도 있다.
+print "접속에 소요된 시간은 {$info['total_time']} 초 입니다.\n";

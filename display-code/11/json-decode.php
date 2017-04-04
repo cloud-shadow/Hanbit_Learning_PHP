@@ -7,5 +7,6 @@ $response = file_get_contents($url);
 $info = json_decode($response);
 
 foreach ($info->list->item as $item) {
-    print "The ndbno for {$item->name} is {$item->ndbno}.\n";
+    print "{$item->name}ÀÇ ndbno : {$item->ndbno}.\n";
 }
+
