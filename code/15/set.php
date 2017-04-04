@@ -1,13 +1,11 @@
 <?php
-// $_POST['mo'], $_POST['dy'], and $_POST['yr']
-// contain month number, day, and year submitted
-// from a form.
+// $_POST['mo'], $_POST['dy'], $_POST['yr']
+// 이 세 값은 폼으로 제출된 월, 일, 연도 값이다.
 //
-// $_POST['hr'], $_POST['mn'] contain
-// hour and minute submitted from a form
+// $_POST['hr'], $_POST['mn']
+// 이 두 값은 폼으로 제출된 시간과 분이다.
 
-// $d contains the current time, but soon that will
-// be overridden.
+// 먼저 $d에 현재 시각이 지정되고, setDate와 setTime에 의해 갱신된다.
 $d = new DateTime();
 
 $d->setDate($_POST['yr'], $_POST['mo'], $_POST['dy']);
