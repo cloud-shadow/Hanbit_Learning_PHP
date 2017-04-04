@@ -40,7 +40,7 @@ class FormHelper {
         return "<$tag {$this->attributes($attributes, $isMultiple)} />";
     }
     public function start($tag, $attributes = array(), $isMultiple = false) {
-        // <select> and <textarea> tags don't get value attributes on them
+    // <select>와 <textarea> 태그는 value 속성이 없다.
         $valueAttribute = (! (($tag == 'select')||($tag == 'textarea')));
         $attrs = $this->attributes($attributes, $isMultiple, $valueAttribute);
         return "<$tag $attrs>";
@@ -52,23 +52,23 @@ class FormHelper {
     protected function attributes($attributes, $isMultiple,
                                   $valueAttribute = true) {
         $tmp = array();
-        // If this tag could include a value attribute and it
-        // has a name and there's an entry for the name
-        // in the values array, then set a value attribute
+        // 현재 태그에n ame과 value 속성이 있고
+        // $this->values 배열에 name 속성에 해당하는 원소가 있으면
+        // value 속성을 설정한다.
         if ($valueAttribute && isset($attributes['name']) &&
             array_key_exists($attributes['name'], $this->values)) {
             $attributes['value'] = $this->values[$attributes['name']];
         }
         foreach ($attributes as $k => $v) {
-            // True boolean value means boolean attribute
+            // v$가 true면 값을 갖지 않는 속성이므로 속성명만 추가한다.
             if (is_bool($v)) {
                 if ($v) { $tmp[] = $this->encode($k); }
             }
-            // Otherwise k=v
+            // 그렇지 않으면k =v 형태로 추가한다.
             else {
                 $value = $this->encode($v);
-                // If this is an element that might have multiple values,
-                // tack [] onto its name
+                // 다중 값을 선택할 수 있는 폼
+                // name에 []를 붙인다.
                 if ($isMultiple && ($k == 'name')) {
                     $value .= '[]';
                 }
@@ -81,7 +81,7 @@ class FormHelper {
     protected function options($name, $options) {
         $tmp = array();
         foreach ($options as $k => $v) {
-            $s = "<option  value=\"{$this->encode($k)}\"";
+            $s = "<option value=\"{$this->encode($k)}\"";
             if ($this->isOptionSelected($name, $k)) {
                 $s .= ' selected';
             }
@@ -92,18 +92,17 @@ class FormHelper {
     }
 
     protected function isOptionSelected($name, $value) {
-        // If there's no entry for $name in the values array,
-        // then this option can't be selected
+        // $this->values 배열에 $name에 해당하는 항목이 없으면
+        // 이 option 은 선택될 수 없다.
         if (! isset($this->values[$name])) {
             return false;
         }
-        // If the entry for $name in the values array is itself
-        // an array, check if $value is in that array
+        // $this->values 배열에 $name에 해당하는 항목이 있고
+        // 그 값이 배열이면, 배열 원소 중에 v$alue가 있는지 확인한다.
         else if (is_array($this->values[$name])) {
             return in_array($value, $this->values[$name]);
         }
-        // Otherwise, compare $value to the entry to for $name
-        // in the values array
+        // 그렇지 않으면, v$alue와 $this->values 배열의 $name 항목을 비교한다.
         else {
             return $value == $this->values[$name];
         }

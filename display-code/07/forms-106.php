@@ -1,7 +1,7 @@
-$sweets = array('puff' => 'Sesame Seed Puff',
-                'square' => 'Coconut Milk Gelatin Square',
-                'cake' => 'Brown Sugar Cake',
-                'ricemeat' => 'Sweet Rice and Meat');
+$sweets = array('puff' => 'Âü±ú ÆÛÇÁ',
+                'square' => 'ÄÚÄÚ³Ó ¿ìÀ¯ Á©¸®',
+                'cake' => 'Èæ¼³ÅÁ ÄÉÀÌÅ©',
+                'ricemeat' => 'Âý½Ò °æ´Ü');
 
 function generate_options_with_value ($options) {
     $html = '';
@@ -12,16 +12,16 @@ function generate_options_with_value ($options) {
 }
 
 
-// Display the form
+// ÆûÀ» Ç¥½ÃÇÏ´Â ÇÔ¼ö
 function show_form( ) {
     $sweets = generate_options_with_value($GLOBALS['sweets']);
     print<<<_HTML_
 <form method="post" action="$_SERVER[PHP_SELF]">
-Your Order: <select name="order">
+¸Þ´º ¼±ÅÃ: <select name="order">
 $sweets
 </select>
 <br/>
-<input type="submit" value="Order">
+<input type="submit" value="ÁÖ¹®">
 </form>
 _HTML_;
 }

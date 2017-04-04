@@ -1,11 +1,11 @@
 <form method="post" action="order.php">
-Your Order: <select name="order">
-<option value="puff">Sesame Seed Puff</option>
-<option value="square">Coconut Milk Gelatin Square</option>
-<option value="cake">Brown Sugar Cake</option>
-<option value="ricemeat">Sweet Rice and Meat</option>
+메뉴 선택: <select name="order">
+<option value="puff">참깨 퍼프</option>
+<option value="square">코코넛 우유 젤리</option>
+<option value="cake">흑설탕 케이크</option>
+<option value="ricemeat">찹쌀 경단</option>
 
 </select>
 <br/>
-<input type="submit" value="Order">
+<input type="submit" value="주문">
 </form>

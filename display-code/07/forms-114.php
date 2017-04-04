@@ -1,10 +1,10 @@
-$sweets = array('puff' => 'Sesame Seed Puff',
-                'square' => 'Coconut Milk Gelatin Square',
-                'cake' => 'Brown Sugar Cake',
-                'ricemeat' => 'Sweet Rice and Meat');
+$sweets = array('puff' => 'Âü±ú ÆÛÇÁ',
+                'square' => 'ÄÚÄÚ³Ó ¿ìÀ¯ Á©¸®',
+                'cake' => 'Èæ¼³ÅÁ ÄÉÀÌÅ©',
+                'ricemeat' => 'Âý½Ò °æ´Ü');
 
 print '<select name="sweet">';
-// $option is the option value, $choice is what's displayed
+// $optionÀº optionÀÇ °ª, $labelÀº Ç¥½Ã ¸Þ´º¸íÀÌ´Ù.
 foreach ($sweets as $option => $label) {
     print '<option value="' .$option .'"';
     if ($option == $defaults['sweet']) {

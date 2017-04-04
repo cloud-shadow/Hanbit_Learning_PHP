@@ -1,5 +1,5 @@
-$sweets = array('Sesame Seed Puff','Coconut Milk Gelatin Square',
-                 'Brown Sugar Cake','Sweet Rice and Meat');
+$sweets = array('참깨 퍼프','코코넛 우유 젤리',
+    '흑설탕 케이크','찹쌀 경단');
 
 function generate_options($options) {
     $html = '';
@@ -9,16 +9,16 @@ function generate_options($options) {
     return $html;
 }
 
-// Display the form
-function show_form( ) {
+// 폼을 표시하는 함수
+function show_form() {
     $sweets = generate_options($GLOBALS['sweets']);
     print<<<_HTML_
 <form method="post" action="$_SERVER[PHP_SELF]">
-Your Order: <select name="order">
+메뉴 선택: <select name="order">
 $sweets
 </select>
 <br/>
-<input type="submit" value="Order">
+<input type="submit" value= "주문">
 </form>
 _HTML_;
 }
