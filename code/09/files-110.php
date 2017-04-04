@@ -1,7 +1,7 @@
 <?php
 $fh = fopen('people.txt','rb');
 if (! $fh) {
-    print "Error opening people.txt: $php_errormsg";
+    print "people.txt 파일을 열 수 없습니다: $php_errormsg";
 } else {
     while (! feof($fh)) {
         $line = fgets($fh);
@@ -12,6 +12,6 @@ if (! $fh) {
         }
     }
     if (! fclose($fh)) {
-        print "Error closing people.txt: $php_errormsg";
+        print "people.txt 파일을 닫을 수 없습니다: $php_errormsg";
     }
 }
