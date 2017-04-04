@@ -1,1 +1,1 @@
-print 'Use a \\ to escape in a string';
+print '문자열 안에서 \\ 문자를 이스케이프하기';

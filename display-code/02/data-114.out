@@ -1,10 +1,10 @@
 <html>
-<head><title>Menu</title></head>
+<head><title>메뉴</title></head>
 <body>
 <ul>
-<li> Barbecued pork
-<li> Sliced pork
-<li> Braised pork with bean sprout
+<li> 돼지고기 바베큐
+<li> 저민 돼지고기
+<li> 돼지고기 조림과 숙주나물
 </ul>
 </body>
 </html>

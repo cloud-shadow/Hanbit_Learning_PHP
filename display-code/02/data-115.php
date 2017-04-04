@@ -1,3 +1,3 @@
-$preparation = 'Braise';
-$meat = 'Beef';
-print "{$preparation}d $meat with Vegetables";
+$preparation = '삶';
+$meat = '소고기';
+print "야채를 곁들인 {$preparation}은 $meat";

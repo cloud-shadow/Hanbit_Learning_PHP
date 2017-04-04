@@ -1,4 +1,4 @@
 <? php
-print 'How are you?';
-print 'I'm fine.';
+print '점심 메뉴는 삶은 소고기입니다!';
+print '그는 '해물 요리면 좋을텐데'라고 생각했다.';
 ??>

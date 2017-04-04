@@ -1,5 +1,5 @@
 print '<ul>
-<li>Beef Chow-Fun</li>
-<li>Sauteed Pea Shoots</li>
-<li>Soy Sauce Noodles</li>
+<li>소고기 쌀국수 볶음</li>
+<li>완두싹 볶음</li>
+<li>간장 볶음면</li>
 </ul>';

@@ -1,2 +1,2 @@
 $email = 'jacob@example.com';
-print "Send replies to: $email";
+print "답신 보낼 곳: $email";

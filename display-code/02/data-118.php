@@ -1,3 +1,3 @@
-if ($_POST['email'] == 'president@whitehouse.gov') {
-   print "Welcome, US President.";
+if ($_POST['email'] == 'cloudshadow@gmail.com') {
+    print "환영합니다, 정병열 님.";
 }
