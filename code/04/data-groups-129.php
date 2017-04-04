@@ -5,11 +5,11 @@ $meals = array('Walnut Bun' => 1,
                'Eggplant with Chili Sauce' => 6.50);
 
 foreach ($meals as $dish => $price) {
-    // $price = $price * 2 does NOT work
+// $price = $price * 2 구문은 효과가 없다.
     $meals[$dish] = $meals[$dish] * 2;
 }
 
-// Iterate over the array again and print the changed values
+// 다시 한번 배열을 순회하며 변경된 값을 출력한다.
 foreach ($meals as $dish => $price) {
-    printf("The new price of %s is \$%.2f.\n",$dish,$price);
+    printf("%s 메뉴의 변경된 가격은 \$%.2f입니다.\n",$dish,$price);
 }

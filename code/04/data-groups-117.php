@@ -1,13 +1,13 @@
 <?php
-$meals = array('breakfast' => ['Walnut Bun','Coffee'],
-               'lunch'     => ['Cashew Nuts', 'White Mushrooms'],
-               'snack'     => ['Dried Mulberries','Salted Sesame Crab']);
+$meals = array('breakfast' => ['호두 번', '커피'],
+               'lunch' => ['캐슈너트', '양송이버섯'],
+               'snack' => ['말린 오디', '참깨 게살 무침']);
 
-$lunches = [ ['Chicken','Eggplant','Rice'],
-             ['Beef','Scallions','Noodles'],
-             ['Eggplant','Tofu'] ];
+$lunches = [['닭고기', '가지', '쌀'],
+            ['소고기', '부추', '국수'],
+            ['가지', '두부']];
 
-$flavors = array('Japanese' => array('hot' => 'wasabi',
-                                     'salty' => 'soy sauce'),
-                 'Chinese'  => array('hot' => 'mustard',
-                                     'pepper-salty' => 'prickly ash'));
+$flavors = array('Japanese' => array('hot' => '와사비',
+                                     'salty' => '간장 소스'),
+                 'Chinese' => array('hot' => '머스터드',
+                                    'pepper-salty' => '허브잎'));

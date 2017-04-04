@@ -1,16 +1,16 @@
 <?php
-// This makes $vegetables an array
-$vegetables['corn'] = 'yellow';
+// $vegetables은 배열이 된다.
+$vegetables['corn'] = '노랑';
 
-// This removes any trace of "corn" and "yellow" and makes $vegetables a scalar
-$vegetables = 'delicious';
+// $vegetables는 "corn"이나 "yellow"와 관계없는 스칼라가 된다.
+$vegetables = '맛있어';
 
-// This makes $fruits a scalar
+// $fruits는 스칼라가 된다.
 $fruits = 283;
 
-// This doesn't work -- $fruits stays 283 and the PHP engine
-// issues a Warning
-$fruits['potassium'] = 'banana';
+// 다음 구문은 작동하지 않는다.
+// PHP 엔진은 경고를 발생시키고 $fruits의 값은 283으로 유지된다.
+$fruits['potassium'] = '바나나';
 
-// But this overwrites $fruits and it becomes an array
-$fruits = array('potassium' => 'banana');
+// 그러나 이 구문은 $fruits 변수에 배열을 덮어씌운다.
+$fruits = array('potassium' => '바나나');

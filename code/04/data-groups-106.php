@@ -7,5 +7,5 @@ $meals = array('Walnut Bun' => 1,
 
 $dish = array_search(6.50, $meals);
 if ($dish) {
-    print "$dish costs \$6.50";
+    print "$dish 메뉴의 가격은 \$6.50입니다.";
 }

@@ -7,7 +7,7 @@ $meal = array('breakfast' => 'Walnut Bun',
               'snack' => 'Dried Mulberries',
               'dinner' => 'Eggplant with Chili Sauce');
 
-print "Before Sorting:\n";
+print "정렬 전:\n";
 foreach ($dinner as $key => $value) {
     print " \$dinner: $key $value\n";
 }
@@ -18,7 +18,7 @@ foreach ($meal as $key => $value) {
 sort($dinner);
 sort($meal);
 
-print "After Sorting:\n";
+print "정렬 후:\n";
 foreach ($dinner as $key => $value) {
     print " \$dinner: $key $value\n";
 }

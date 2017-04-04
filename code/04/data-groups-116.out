@@ -1,9 +1,9 @@
-Before Sorting:
+정렬 전:
    $meal: breakfast Walnut Bun
    $meal: lunch Cashew Nuts and White Mushrooms
    $meal: snack Dried Mulberries
    $meal: dinner Eggplant with Chili Sauce
-After Sorting:
+정렬 후:
    $meal: breakfast Walnut Bun
    $meal: dinner Eggplant with Chili Sauce
    $meal: snack Dried Mulberries
