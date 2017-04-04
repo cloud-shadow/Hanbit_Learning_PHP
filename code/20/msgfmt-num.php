@@ -1,6 +1,6 @@
 <?php
 
-$msg = "The cost is {0,number,currency}.";
+$msg = "총 가격: {0,number,currency}.";
 
 $fmtUS = new MessageFormatter('en_US', $msg);
 $fmtGB = new MessageFormatter('en_GB', $msg);

@@ -3,8 +3,8 @@
 $english = "cheese";
 $greek = "τυρί";
 
-print "strlen() says " . strlen($english) . " for $english and " .
-    strlen($greek) . " for $greek.\n";
+print "strlen()을 사용했을 때 '$english'의 글자 수: " . strlen($english) . ", " .
+    "'$greek'의 글자 수: ". strlen($greek) . ".\n";
 
-print "mb_strlen() says " . mb_strlen($english) . " for $english and " .
-    mb_strlen($greek) . " for $greek.\n";
+print "mb_strlen()을 사용했을 때 '$english'의 글자 수: " . mb_strlen($english) . ", " .
+    "'$greek'의 글자 수: ". mb_strlen($greek) . ".\n";
