@@ -1,1 +1,1 @@
-\Tiny\Fruit::munch("banana");
+\Tiny\Fruit::munch("¹Ù³ª³ª");

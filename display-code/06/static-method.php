@@ -7,6 +7,6 @@ class Entree {
     }
 
     public static function getSizes() {
-        return array('small','medium','large');
+        return array('¼Ò','Áß','´ë');
     }
 }

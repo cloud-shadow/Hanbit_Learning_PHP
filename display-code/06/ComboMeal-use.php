@@ -1,14 +1,14 @@
-// Some soup with name and ingredients
-$soup = new Entree('Chicken Soup', array('chicken', 'water'));
+// 수프 종류와 재료
+$soup = new Entree('닭고기 수프', array('닭고기', '물'));
 
-// A sandwich with name and ingredients
-$sandwich = new Entree('Chicken Sandwich', array('chicken', 'bread'));
+// 샌드위치 종류와 재료
+$sandwich = new Entree('닭고기 샌드위치', array('닭고기', '빵'));
 
-// A combo meal
-$combo = new ComboMeal('Soup + Sandwich', array($soup, $sandwich));
+// 세트 메뉴
+$combo = new ComboMeal('수프 + 샌드위치', array($soup, $sandwich));
 
-foreach (['chicken','water','pickles'] as $ing) {
+foreach (['닭고기','물','피클'] as $ing) {
     if ($combo->hasIngredient($ing)) {
-        print "Something in the combo contains $ing.\n";
+        print "세트 메뉴에 들어가는 재료: $ing.\n";
     }
 }

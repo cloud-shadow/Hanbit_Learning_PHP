@@ -2,8 +2,8 @@ use Tiny\Eating\Fruit as Snack;
 
 use Tiny\Fruit;
 
-// This calls \Tiny\Eating\Fruit::munch();
-Snack::munch("strawberry");
+// \Tiny\Eating\Fruit::munch(); È£Ãâ
+Snack::munch("µþ±â");
 
-// This calls \Tiny\Fruit::munch();
-Fruit::munch("orange");
+// \Tiny\Fruit::munch(); È£Ãâ
+Fruit::munch("¿À·»Áö");
