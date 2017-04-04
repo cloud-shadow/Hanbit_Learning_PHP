@@ -1,18 +1,19 @@
 <?php
 
 $message->addPart(<<<_HTML_
-<p>Dear James,</p>
-<p>You should try this:</p>
+<p>아들,</p>
+<p>출출할 때는 이렇게 해보렴.</p>
 <ul>
-<li>puree 1 pound of chicken with two pounds of asparagus in the blender</li>
-<li>drop small balls of the mixture into a deep fryer.</li>
+
+<li> 닭가슴살 1인분과 아스파라거스 몇 개를 믹서기에 넣고 함께 갈아서</li>
+<li>경단처럼 뭉친 다음 달궈진 프라이팬에 넣고 볶으면 훌륭한 요리가 된단다.</li>
 </ul>
 
-<p><em>Yummy!</em</p>
+<p><em>맛있을거야!</em</p>
 
-<p>Love,</p>
-<p>Julia</p>
+<p>사랑을 담아,</p>
+<p>엄마가.</p>
 
 _HTML_
-    // MIME type as second argument
+    // 두 번째 인수로 MIME 형식을 지정한다.
     , "text/html");
