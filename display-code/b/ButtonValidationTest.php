@@ -20,8 +20,8 @@ public function testButtonNoTypeOK() {
     }
     public function testButtonTypeOtherFails() {
         $form = new FormHelper();
-        // FormHelper should throw an InvalidArgumentException
-        // when an invalid attribute is provided
+        // FormHelper에 잘못된 속성이 입력되면
+        // InvalidArgumentException가 발생되어야 한다.
         $this->setExpectedException('InvalidArgumentException');
         $html = $form->tag('button',['type'=>'other']);
     }

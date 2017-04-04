@@ -10,11 +10,9 @@ $tip = $food * $tip_rate;
 $tax = $food * $tax_rate;
 
 $total = $food + $tip + $tax;
-
-printf("%d %-9s at \$%.2f each: \$%5.2f\n", 2, 'Hamburger', $hamburger,
-       2 * $hamburger);
-printf("%d %-9s at \$%.2f each: \$%5.2f\n", 1, 'Shake', $shake, $hamburger);
-printf("%d %-9s at \$%.2f each: \$%5.2f\n", 1, 'Cola', $cola, $cola);
-printf("%25s: \$%5.2f\n", 'Food Total', $food);
-printf("%25s: \$%5.2f\n", 'Food and Tax Total', $food + $tax);
-printf("%25s: \$%5.2f\n", 'Food, Tax, and Tip Total', $total);
+printf("%-9s \$%.2f %d개: \$%5.2f\n", '햄버거', $hamburger, 2, 2 * $hamburger);
+printf("%-9s \$%.2f %d개: \$%5.2f\n", '쉐이크', $shake, 1, $shake);
+printf("%-9s \$%.2f %d개: \$%5.2f\n", '콜라', $cola, 1, $cola);
+printf("%25s: \$%5.2f\n", '음식 가격 합계', $food);
+printf("%25s: \$%5.2f\n", '음식 가격, 부가세 합계', $food + $tax);
+printf("%25s: \$%5.2f\n", '음식 가격, 부가세, 팁 합계', $total);

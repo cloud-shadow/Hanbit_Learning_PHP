@@ -11,4 +11,4 @@ $tax = $food * $tax_rate;
 
 $total = $food + $tip + $tax;
 
-print 'The total cost of the meal is $' . $total;
+print 'ÃÑ °¡°Ý: $' . $total;

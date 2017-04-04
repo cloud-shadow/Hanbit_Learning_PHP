@@ -2,7 +2,7 @@
 <table>
     <?php if ($errors) { ?>
         <tr>
-            <td>You need to correct the following errors:</td>
+        <td>다음 항목을 수정해주세요:</td>
             <td><ul>
                 <?php foreach ($errors as $error) { ?>
                     <li><?= $form->encode($error) ?></li>
@@ -10,8 +10,8 @@
             </ul></td>
     <?php }  ?>
 
-    <tr><td>File:</td><td><?= $form->input('text', ['name' => 'file']) ?></td></tr>
-    <tr><td colspan="2" align="center"><?= $form->input('submit', ['value' => 'Display']) ?>
+    <tr><td>파일명:</td><td><?= $form->input('text', ['name' => 'file']) ?></td></tr>
+    <tr><td colspan="2" align="center"><?= $form->input('submit', ['value' => '출력']) ?>
     </td></tr>
 
 </table>

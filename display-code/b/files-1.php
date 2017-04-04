@@ -1,5 +1,5 @@
 $now = new DateTime();
-// Express the vars as simply as possible, just key => value
+// 가능하면 키 = > 값 형식으로 간단하게 값을 표현한다.
 $vars = array('title' => 'Man Bites Dog',
               'headline' => 'Man and Dog Trapped in Biting Fiasco',
               'byline' => 'Ireneo Funes',
@@ -11,24 +11,24 @@ _HTML_
               ,
               'date' => $now->format('l, F j, Y'));
 
-// Make a version of $vars to match the templating syntax, with
-// {} around the keys
+// $vars의 키를 {}로 감싼 템플릿 문법에 대응하도록
+// $template_vars를 생성한다.
 $template_vars = array();
 foreach ($vars as $k => $v) {
     $template_vars['{'.$k.'}'] = $v;
 }
-// Load the template
+// 템플릿 불러오기
 $template = file_get_contents('template.html');
 if ($template === false) {
     die("Can't read template.html: $php_errormsg");
 }
-// If given an array of strings to look for and an array of replacements,
-// str_replace() does all the replacements at once for you
+// 찾을 문자열과 교체할 문자열을 배열로 전달하면
+// str_replace()은 각각의 쌍을 한번에 교체한다.
 $html = str_replace(array_keys($template_vars),
                     array_values($template_vars),
                     $template);
-// Write out the new HTML page
+// HTML 페이지 생성.
 $result = file_put_contents('article.html', $html);
 if ($result === false) {
-    die("Can't write article.html: $php_errormsg");
+    die("article.html 파일을 생성할 수 없습니다: $php_errormsg");
 }

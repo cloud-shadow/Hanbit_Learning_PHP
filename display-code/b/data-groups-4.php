@@ -1,22 +1,21 @@
-/* The grades and ID numbers of students in a class:
-   An associative array whose key is the student's name and whose value is
-   an associative array of grade and ID number
+/* 한 학급에 속한 학생들의 성적과 학번을 나타낸 배열.
+   학생의 이름이 키인 연관 배열을 만들고
+   성적과 학번으로 구성된 연관 배열을 키에 할당한다.
 */
-$students = [ 'James D. McCawley' => [ 'grade' => 'A+','id' => 271231 ],
-              'Buwei Yang Chao' => [ 'grade' => 'A', 'id' => 818211] ];
+$students = [ 'Hong Gil Dong' => [ 'grade' => '100','id' => 271231 ],
+              'Kim Soo Yong ' => [ 'grade' => '95', 'id' => 818211] ];
 
-/* How many of each item in a store inventory is in stock:
-   An associative array whose key is the item name and whose value is the
-   number in stock
+/* 상품의 재고 수량을 나타내는 배열.
+   상품명이 키인 연관 배열을 만들고
+   해당 상품의 재고 수량을 값으로 할당한다.
  */
 $inventory = [ 'Wok' => 5, 'Steamer' => 3, 'Heavy Cleaver' => 3,
                'Light Cleaver' => 0 ];
-
-/* School lunches for a week — the different parts of each meal,
-   (entree, side dish, drink, etc.) and the cost for each day:
-   An associative array whose key is the day and whose value is an
-   associative array describing the meal. This associative array has a key/value
-   pair for cost and a key/value pair for each part of the meal.
+/* 주간 급식 식단표 배열 - 급식의 종류와 가격을
+   요일별로 나타낸다. 급식의 종류는 entree, side dish, drink 등이다.
+   요일 명을 키로 연관 배열을 만들고
+   cost와 가격, 각 급식과 메뉴를 키/값 쌍으로 구성한 배열을
+   각 요일 키에 할당한다.
 */
 $lunches = [ 'Monday' => [ 'cost' => 1.50,
                            'entree' => 'Beef Shu-Mai',
@@ -39,16 +38,14 @@ $lunches = [ 'Monday' => [ 'cost' => 1.50,
                            'side' => 'Duck Feet',
                            'drink' => 'Jasmine Tea' ] ];
 
-
-/* The names of people in your family:
-   A numeric array whose indicies are implict and whose values are the names
-   of family members
+/* 가족 구성원을 나타내는 배열.
+   구성원의 이름을 값으로 나열해
+   숫자키 배열을 구성한다.
  */
 $family = [ 'Bart', 'Lisa', 'Homer', 'Marge', 'Maggie' ];
-
-/* The names, ages, and relationship to you of people in your family:
-   An associative array whose keys are the names of family members and whose
-   values are associative arrays with age and relationship key/value pairs
+/* 가족구성원의 이름, 나이, 관계를 나타낸 배열.
+구성원의 이름이 키인 연관 배열을 구성하고
+age와 나이, relation과 관계를 키,값 쌍으로 구성한 연관 배열을 할당한다.
  */
 $family = [ 'Bart' => [ 'age' => 10,
                         'relation' => 'brother' ],

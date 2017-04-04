@@ -3,7 +3,7 @@ class PricedEntree extends Entree {
         parent::__construct($name, $ingredients);
         foreach ($this->ingredients as $ingredient) {
             if (! $ingredient instanceof Ingredient) {
-                throw new Exception('Elements of $ingredients must be Ingredient objects');
+                throw new Exception('$ingredients의 원소는 Ingredient 객체여야 합니다.');
             }
         }
     }

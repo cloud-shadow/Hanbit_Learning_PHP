@@ -2,17 +2,17 @@ include 'FormHelper.php';
 
 class FormHelperTest extends PHPUnit_Framework_TestCase {
 
-    public $products = [ 'cu&ke'    => 'Braised <Sea> Cucumber',
-                         'stomach' => "Sauteed Pig's Stomach",
-                         'tripe'   => 'Sauteed Tripe with Wine Sauce',
-                         'taro'    => 'Stewed Pork with Taro',
-                         'giblets' => 'Baked Giblets with Salt',
-                         'abalone' => 'Abalone with Marrow and Duck Feet'];
+    public $products = [ 'cu&ke' => '데친 <바다> 해삼',
+                         'stomach' => '"순대"',
+                         'tripe' => '와인 소스 양대창',
+                         'taro' => '돼지고기 토란국',
+                         'giblets' => '곱창 소금 구이',
+                         'abalone' => '전복 호박 볶음'];
     public $stooges = ['Larry','Moe','Curly','Shemp'];
 
-    // This code gets run before each test. Putting it in
-    // the special setUp() method is more concise than having
-    // to repeat it in each test method
+    // 이 코드는 각 테스트 전에 실행한다.
+    // 각 테스트 메서드에서 반복하는 것보다
+    // setUp() 메서드가 더 정확하다.
     public function setUp() {
         $_SERVER['REQUEST_METHOD'] = 'GET';
     }
@@ -21,7 +21,7 @@ class FormHelperTest extends PHPUnit_Framework_TestCase {
         $form = new FormHelper();
         $html = $form->select($this->products);
         $this->assertEquals($html,<<<_HTML_
-<select ><option  value="cu&amp;ke">Braised &lt;Sea&gt; Cucumber</option><option  value="stomach">Sauteed Pig's Stomach</option><option  value="tripe">Sauteed Tripe with Wine Sauce</option><option  value="taro">Stewed Pork with Taro</option><option  value="giblets">Baked Giblets with Salt</option><option  value="abalone">Abalone with Marrow and Duck Feet</option></select>
+<select ><option value="cu&amp;ke">데친 &lt;바다&gt; 해삼</option><option value="stomach">"순대"</option><option value="tripe">와인 소스 양대창</option><option value="taro">돼지고기 토란국</option><option value="giblets">곱창 소금 구이</option><option value="abalone">전복 호박 볶음</option></select>
 _HTML_
         );
     }
@@ -30,7 +30,7 @@ _HTML_
         $form = new FormHelper();
         $html = $form->select($this->stooges);
         $this->assertEquals($html,<<<_HTML_
-<select ><option  value="0">Larry</option><option  value="1">Moe</option><option  value="2">Curly</option><option  value="3">Shemp</option></select>
+<select ><option value="0">Larry</option><option value="1">Moe</option><option value="2">Curly</option><option value="3">Shemp</option></select>
 _HTML_
         );
     }

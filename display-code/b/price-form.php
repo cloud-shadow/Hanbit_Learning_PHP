@@ -2,7 +2,7 @@
 <table>
     <?php if ($errors) { ?>
         <tr>
-            <td>You need to correct the following errors:</td>
+        <td>다음 항목을 수정해주세요:</td>
             <td><ul>
                 <?php foreach ($errors as $error) { ?>
                     <li><?= $form->encode($error) ?></li>
@@ -10,13 +10,13 @@
             </ul></td>
     <?php }  ?>
     <tr>
-        <td>Minimum Price:</td>
+        <td>최저 가격:</td>
         <td><?= $form->input('text',['name' => 'min_price']) ?></td>
     </tr>
     <tr>
         <td colspan="2" align="center">
             <?= $form->input('submit', ['name' => 'search',
-                                        'value' => 'Search']) ?></td>
+                             'value' => '검색']) ?></td>
     </tr>
 </table>
 </form>
