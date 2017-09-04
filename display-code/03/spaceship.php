@@ -1,21 +1,21 @@
-// 1Àº 12.7º¸´Ù ÀÛÀ¸¹Ç·Î $a´Â À½¼ö´Ù.
+// 1ì€ 12.7ë³´ë‹¤ ìž‘ìœ¼ë¯€ë¡œ $aëŠ” ìŒìˆ˜ë‹¤.
 $a = 1 <=> 12.7;
 
-// "c"´Â "b"º¸´Ù ³ªÁß¿¡ ³ª¿À¹Ç·Î $b´Â ¾ç¼ö´Ù.
+// "c"ëŠ” "b"ë³´ë‹¤ ë‚˜ì¤‘ì— ë‚˜ì˜¤ë¯€ë¡œ $bëŠ” ì–‘ìˆ˜ë‹¤.
 $b = "charlie" <=> "bob";
 
-// strcmp()¿Í´Â ´Þ¸® <¿Í >Ã³·³ ºñ±³ÇÑ´Ù.
+// strcmp()ì™€ëŠ” ë‹¬ë¦¬ <ì™€ >ì²˜ëŸ¼ ë¹„êµí•œë‹¤.
 $x = '6 pack' <=> '55 card stud';
 if ($x > 0) {
-    print '¹®ÀÚ¿­ "6 pack"Àº ¹®ÀÚ¿­ "55 card stud"º¸´Ù Å©´Ù.';
+    print 'ë¬¸ìžì—´ "6 pack"ì€ ë¬¸ìžì—´ "55 card stud"ë³´ë‹¤ í¬ë‹¤.';
 } elseif ($x < 0) {
-    print '¹®ÀÚ¿­ "6 pack"Àº ¹®ÀÚ¿­ "55 card stud"º¸´Ù ÀÛ´Ù.';
+    print 'ë¬¸ìžì—´ "6 pack"ì€ ë¬¸ìžì—´ "55 card stud"ë³´ë‹¤ ìž‘ë‹¤.';
 }
 
-// strcmp()¿Í´Â ´Þ¸® <¿Í >Ã³·³ ºñ±³ÇÑ´Ù.
+// strcmp()ì™€ëŠ” ë‹¬ë¦¬ <ì™€ >ì²˜ëŸ¼ ë¹„êµí•œë‹¤.
 $x = '6 pack' <=> 55;
 if ($x > 0) {
-    print '¹®ÀÚ¿­ "6 pack"Àº ¼ýÀÚ 55º¸´Ù Å©´Ù.';
+    print 'ë¬¸ìžì—´ "6 pack"ì€ ìˆ«ìž 55ë³´ë‹¤ í¬ë‹¤.';
 } elseif ($x < 0) {
-    print '¹®ÀÚ¿­ "6 pack"Àº ¼ýÀÚ 55º¸´Ù ÀÛ´Ù.';
+    print 'ë¬¸ìžì—´ "6 pack"ì€ ìˆ«ìž 55ë³´ë‹¤ ìž‘ë‹¤.';
 }

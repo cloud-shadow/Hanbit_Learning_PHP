@@ -1,6 +1,6 @@
 if ($word < 'baa') {
-    print "ÀÌ ´Ü¾î´Â cookie°¡ ¾Æ´Õ´Ï´Ù.";
+    print "ì´ ë‹¨ì–´ëŠ” cookieê°€ ì•„ë‹™ë‹ˆë‹¤.";
 }
 if ($word >= 'zoo') {
-    print "ÀÌ ´Ü¾î´Â zooÀÌ°Å³ª zymurgyÀÏ ¼ö ÀÖÁö¸¸ zoneÀº ¾Æ´Õ´Ï´Ù.";
+    print "ì´ ë‹¨ì–´ëŠ” zooì´ê±°ë‚˜ zymurgyì¼ ìˆ˜ ìˆì§€ë§Œ zoneì€ ì•„ë‹™ë‹ˆë‹¤.";
 }

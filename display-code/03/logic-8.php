@@ -1,10 +1,10 @@
 $age = 12;
 $shoe_size = 13;
 if ($age > $shoe_size) {
-    print "1¹ø ¸Ş½ÃÁö.";
+    print "1ë²ˆ ë©”ì‹œì§€.";
 } elseif (($shoe_size++) && ($age > 20)) {
-    print "2¹ø ¸Ş½ÃÁö.";
+    print "2ë²ˆ ë©”ì‹œì§€.";
 } else {
-    print "3¹ø ¸Ş½ÃÁö.";
+    print "3ë²ˆ ë©”ì‹œì§€.";
 }
-print "³ªÀÌ: $age. ½Å¹ß Ä¡¼ö: $shoe_size";
+print "ë‚˜ì´: $age. ì‹ ë°œ ì¹˜ìˆ˜: $shoe_size";
