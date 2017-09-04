@@ -1,5 +1,5 @@
 if(abs($price_1 - $price_2) < 0.00001) {
-    print '$price_1°ú $price_2´Â °°À½.';
+    print '$price_1ê³¼ $price_2ëŠ” ê°™ìŒ.';
 } else {
-    print '$price_1°ú $price_2´Â ´Ù¸§.';
+    print '$price_1ê³¼ $price_2ëŠ” ë‹¤ë¦„.';
 }

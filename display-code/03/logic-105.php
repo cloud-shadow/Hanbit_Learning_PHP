@@ -1,3 +1,3 @@
 if (! strcasecmp($first_name,$last_name)) {
-    print '$first_name°ú $last_nameÀÌ µ¿ÀÏÇÕ´Ï´Ù.';
+    print '$first_nameê³¼ $last_nameì´ ë™ì¼í•©ë‹ˆë‹¤.';
 }
